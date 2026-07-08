@@ -51,27 +51,35 @@ FB Enhancer does not collect any user data. It does not transmit any information
 ## Privacy Disclosures
 
 ### Does your extension handle personal communications?
+
 No.
 
 ### Does your extension handle financial or payment information?
+
 No.
 
 ### Does your extension handle health information?
+
 No.
 
 ### Does your extension handle authentication credentials?
+
 No.
 
 ### Does your extension handle personal data?
+
 No.
 
 ### Does your extension sell user data?
+
 No.
 
 ### Does your extension share user data with third parties?
+
 No.
 
 ### Does your extension use the data for purposes other than the extension's single purpose?
+
 No. The only data stored is the user's feature toggle preferences, used exclusively to restore those preferences when the extension loads.
 
 ---
@@ -91,11 +99,13 @@ https://zokavic1.github.io/fb-enhancer/privacy-policy
 **Language:** English
 
 **Description (short, max 132 chars):**
+
 ```
 Clean up your Facebook feed — hide sponsored posts, stories, reels, suggestions, and the right sidebar.
 ```
 
 **Description (detailed):**
+
 ```
 FB Enhancer is a lightweight, privacy-first browser extension that removes unwanted content from your Facebook feed.
 

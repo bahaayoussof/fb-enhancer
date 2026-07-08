@@ -17,9 +17,11 @@ Removing it would mean the extension forgets all user preferences the moment the
 
 **What user data it accesses:**
 Only the extension's own settings object — a JSON record of which features are enabled:
+
 ```json
 { "hide-stories": true, "hide-reels": true, "hide-sponsored": true, ... }
 ```
+
 No personal information, no browsing history, no Facebook content.
 
 ---
@@ -37,6 +39,7 @@ This is the narrowest possible host permission for an extension that operates on
 
 **What user data it accesses:**
 The content script reads the Facebook page DOM solely to identify structural patterns (CSS selectors, ARIA attributes, text content of "Sponsored" labels) that match unwanted elements. It does not:
+
 - Read or transmit the content of posts
 - Access your Facebook account information
 - Capture or log any page data
@@ -46,12 +49,12 @@ The content script reads the Facebook page DOM solely to identify structural pat
 
 ## Permissions that were considered and rejected
 
-| Permission | Reason not included |
-|---|---|
-| `"tabs"` | Not needed. `chrome.tabs.sendMessage()` and `chrome.tabs.query()` work without it. |
-| `"activeTab"` | Was previously included, removed in v1.0.0. Content script handles page reloads via `window.location.reload()` instead of `chrome.tabs.reload()`. |
-| `"scripting"` | Not needed. Content scripts are declared statically in the manifest. |
-| `"cookies"` | Not used. No cookies are read or written. |
-| `"history"` | Not used. No browsing history is accessed. |
-| `"webRequest"` | Not used. No network requests are intercepted or modified. |
-| `"identity"` | Not used. No user identity or login is required. |
+| Permission     | Reason not included                                                                                                                               |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `"tabs"`       | Not needed. `chrome.tabs.sendMessage()` and `chrome.tabs.query()` work without it.                                                                |
+| `"activeTab"`  | Was previously included, removed in v1.0.0. Content script handles page reloads via `window.location.reload()` instead of `chrome.tabs.reload()`. |
+| `"scripting"`  | Not needed. Content scripts are declared statically in the manifest.                                                                              |
+| `"cookies"`    | Not used. No cookies are read or written.                                                                                                         |
+| `"history"`    | Not used. No browsing history is accessed.                                                                                                        |
+| `"webRequest"` | Not used. No network requests are intercepted or modified.                                                                                        |
+| `"identity"`   | Not used. No user identity or login is required.                                                                                                  |

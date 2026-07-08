@@ -79,9 +79,9 @@ All JavaScript that runs as part of this Extension is bundled and included in th
 
 The Extension requests the following browser permissions:
 
-| Permission | Purpose |
-|---|---|
-| `storage` | Save your toggle preferences locally so they persist between sessions |
+| Permission                       | Purpose                                                                              |
+| -------------------------------- | ------------------------------------------------------------------------------------ |
+| `storage`                        | Save your toggle preferences locally so they persist between sessions                |
 | `host_permissions: facebook.com` | Required to inject the content script that hides unwanted elements on Facebook pages |
 
 Neither permission is used to collect, read, or transmit personal data. See [`docs/permissions.md`](./permissions.md) for a full explanation of each permission.

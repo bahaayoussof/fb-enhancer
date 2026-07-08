@@ -1,0 +1,89 @@
+name: "\U0001F501 Build (reusable)"
+
+on:
+  workflow_call:
+    inputs:
+      version:
+        description: 'Git tag version to inject (e.g. v1.2.3). Omit to use package.json value.'
+        required: false
+        type: string
+        default: ''
+    outputs:
+      zip-name:
+        description: 'Filename of the packaged ZIP'
+        value: ${{ jobs.build.outputs.zip-name }}
+      version:
+        description: 'Resolved semver string (no leading v)'
+        value: ${{ jobs.build.outputs.version }}
+
+jobs:
+  build:
+    name: Lint, Build & Package
+    runs-on: ubuntu-latest
+    outputs:
+      zip-name: ${{ steps.zip.outputs.zip-name }}
+      version: ${{ steps.version.outputs.version }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --prefer-offline
+
+      - name: Resolve version
+        id: version
+        run: |
+          if [ -n "${{ inputs.version }}" ]; then
+            VERSION="${{ inputs.version }}"
+            VERSION="${VERSION#v}"
+          else
+            VERSION=$(node -p "require('./package.json').version")
+          fi
+          echo "version=${VERSION}" >> $GITHUB_OUTPUT
+          echo "Resolved version: ${VERSION}"
+
+      - name: Inject version into manifest.json and package.json
+        if: inputs.version != ''
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          jq --arg v "$VERSION" '.version = $v' manifest.json > manifest.tmp && mv manifest.tmp manifest.json
+          jq --arg v "$VERSION" '.version = $v' package.json   > pkg.tmp       && mv pkg.tmp package.json
+          echo "Injected version $VERSION"
+          cat manifest.json | jq '.version'
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Verify dist output
+        run: |
+          echo "dist/ contents:"
+          ls -lh dist/
+          [ -f dist/manifest.json ] || (echo "ERROR: dist/manifest.json missing" && exit 1)
+
+      - name: Package ZIP
+        id: zip
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          ZIP_NAME="fb-enhancer-v${VERSION}.zip"
+          cd dist && zip -r "../${ZIP_NAME}" . --exclude "*.map" && cd ..
+          SIZE=$(du -sh "${ZIP_NAME}" | cut -f1)
+          echo "zip-name=${ZIP_NAME}" >> $GITHUB_OUTPUT
+          echo "Packaged: ${ZIP_NAME} (${SIZE})"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: extension-zip
+          path: ${{ steps.zip.outputs.zip-name }}
+          retention-days: 30
+          if-no-files-found: error

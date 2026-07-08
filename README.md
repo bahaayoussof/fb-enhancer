@@ -2,6 +2,12 @@
 
 ![FB Enhancer popup screenshot](image.png)
 
+### Visual Comparison
+
+|                                                Clean Feed Layout                                                |                                                 None clean Feed                                                  |
+| :-------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------: |
+| ![Clean Feed Layout](public/images/clean.png)<br>_Main feed fully cleaned of sponsored ads and layout clutter._ | ![Media and Layout Hidden](public/images/unclean.png)<br>_Stories, Reels, and right sidebar panels are visible._ |
+
 A lightweight, modern, and privacy-first browser extension that cleans up your Facebook feed and layout. Take back control of your social media experience by removing sponsored ads, algorithmic suggestions, stories, reels, and sidebar clutter.
 
 Compatible with **Google Chrome**, **Microsoft Edge**, and all Chromium-based browsers.
@@ -11,18 +17,22 @@ Compatible with **Google Chrome**, **Microsoft Edge**, and all Chromium-based br
 ## Features
 
 **Feed**
+
 - **Sponsored Posts** — Hides paid advertisements from the feed
 - **Suggested Posts** — Removes algorithmic suggestions ("Suggested for you", "Suggested Groups", etc.)
 - **Feed Cleaner** — General cleanup and normalization of the main feed
 
 **Media**
+
 - **Stories** — Hides the Stories bar at the top of the feed
 - **Reels** — Hides Reels and short-video carousels
 
 **Layout**
+
 - **Right Sidebar** — Hides the right-hand column (sponsored blocks, suggestions, game invitations)
 
 **Controls**
+
 - Toggle each filter individually from the popup
 - Enable All / Disable All with one click
 - Settings persist across sessions and sync across your devices via browser sync
@@ -80,9 +90,9 @@ npm run format    # Prettier formatting
 
 ## Permissions
 
-| Permission | Why it is needed |
-|---|---|
-| `storage` | Saves your toggle preferences so they persist between sessions |
+| Permission                       | Why it is needed                                                            |
+| -------------------------------- | --------------------------------------------------------------------------- |
+| `storage`                        | Saves your toggle preferences so they persist between sessions              |
 | `host_permissions: facebook.com` | Required to inject the content script that hides elements on Facebook pages |
 
 No other permissions are requested. `activeTab`, `tabs`, `scripting`, `cookies`, `history`, and `webRequest` are intentionally **not** requested.
@@ -93,14 +103,14 @@ No other permissions are requested. `activeTab`, `tabs`, `scripting`, `cookies`,
 
 ## Browser Compatibility
 
-| Browser | Supported |
-|---|---|
-| Google Chrome 88+ | ✓ |
-| Microsoft Edge 88+ | ✓ |
-| Brave | ✓ |
-| Opera | ✓ |
-| Any Chromium-based browser with MV3 support | ✓ |
-| Firefox | ✗ (uses MV2, not currently supported) |
+| Browser                                     | Supported                             |
+| ------------------------------------------- | ------------------------------------- |
+| Google Chrome 88+                           | ✓                                     |
+| Microsoft Edge 88+                          | ✓                                     |
+| Brave                                       | ✓                                     |
+| Opera                                       | ✓                                     |
+| Any Chromium-based browser with MV3 support | ✓                                     |
+| Firefox                                     | ✗ (uses MV2, not currently supported) |
 
 ---
 
