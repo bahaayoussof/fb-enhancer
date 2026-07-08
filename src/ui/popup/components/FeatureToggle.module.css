@@ -43,7 +43,7 @@
   text-overflow: ellipsis;
 }
 
-/* ── iOS Toggle ──────────────────────────────── */
+/* ── iOS 2026 Toggle ─────────────────────────── */
 .toggle {
   flex-shrink: 0;
   width: 51px;
@@ -54,14 +54,21 @@
   position: relative;
   padding: 0;
   outline: none;
-  transition: background-color 0.28s ease;
+  /* track depth: inset rim + subtle bottom shadow */
+  box-shadow:
+    inset 0 0 0 0.5px rgba(0, 0, 0, 0.08),
+    0 1px 2px rgba(0, 0, 0, 0.06);
+  transition: background-color 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .toggle:focus-visible {
-  box-shadow: 0 0 0 4px rgba(0, 122, 255, 0.35);
+  box-shadow:
+    inset 0 0 0 0.5px rgba(0, 0, 0, 0.08),
+    0 0 0 4px rgba(0, 122, 255, 0.32);
 }
 
-/* thumb — 27px circle, 2px gap from track edge */
+/* thumb — white circle, multi-layer elevation */
 .toggle::after {
   content: '';
   position: absolute;
@@ -70,20 +77,36 @@
   width: 27px;
   height: 27px;
   border-radius: 50%;
-  background: #fff;
+  background: #ffffff;
   box-shadow:
-    0 2px 6px rgba(0, 0, 0, 0.22),
-    0 0.5px 2px rgba(0, 0, 0, 0.15);
-  transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+    0 3px 8px rgba(0, 0, 0, 0.18),
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 0 0 0.5px rgba(0, 0, 0, 0.04);
+  /* spring overshoot on translate, quick width change on press */
+  transition:
+    transform 0.36s cubic-bezier(0.34, 1.56, 0.64, 1),
+    width 0.12s ease,
+    border-radius 0.12s ease;
+}
+
+/* press — thumb stretches toward direction of travel */
+.toggle:active::after {
+  width: 33px;
+  border-radius: 14px;
 }
 
 .on {
   background-color: #30d158;
 }
 
-/* track: 51px, thumb: 27px, gap: 2px each side → travel = 51-27-2-2 = 20px */
+/* track 51px, thumb 27px, 2px gap each side → travel 20px */
 .on::after {
   transform: translateX(20px);
+}
+
+/* when ON and pressing, stretched thumb stays flush with right edge */
+.on:active::after {
+  transform: translateX(14px); /* 51 - 33 - 2 - 2 = 14px */
 }
 
 .off {
