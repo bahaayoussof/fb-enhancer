@@ -48,7 +48,6 @@ pnpm-lock.yaml
 
 # Chrome extension packaging artifacts
 *.crx
-*.pem
 *.zip
 
 # Test coverage
@@ -59,11 +58,6 @@ coverage/
 *.tmp
 *.temp
 .cache/
-```
 
-Key points:
-- `node_modules/` and `dist/` never committed — biggest ones
-- `.env*` files block any API keys or secrets you might add later
-- `*.pem` blocks the Chrome extension signing key (if you ever package with `chrome.exe --pack-extension` it generates a `.pem` — that key must **never** go to git)
-- `*.crx` blocks packaged extension binaries
-- Only `package-lock.json` kept — `yarn.lock` and `pnpm-lock.yaml` excluded since project uses npm
+# OpenWolf context — session state, not project code
+.wolf/
