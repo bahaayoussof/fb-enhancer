@@ -68,3 +68,44 @@
 | 11:16 | Created src/shared/utils/debounce.ts | — | ~96 |
 | 11:16 | Created src/shared/utils/is-facebook.ts | — | ~34 |
 | 11:24 | Session end: 55 writes across 39 files (PLAN.md, package.json, tsconfig.json, .prettierrc, manifest.json) | 2 reads | ~13581 tok |
+| 11:30 | Session end: 55 writes across 39 files (PLAN.md, package.json, tsconfig.json, .prettierrc, manifest.json) | 2 reads | ~13581 tok |
+| 11:33 | Session end: 55 writes across 39 files (PLAN.md, package.json, tsconfig.json, .prettierrc, manifest.json) | 2 reads | ~13581 tok |
+| 11:34 | Created src/features/hide-stories/constants.ts | — | ~108 |
+| 11:34 | Created src/features/hide-stories/scanner.ts | — | ~195 |
+| 11:34 | Created src/features/hide-stories/matcher.ts | — | ~135 |
+| 11:34 | Created src/features/hide-stories/actions.ts | — | ~198 |
+| 11:34 | Created src/features/hide-stories/feature.ts | — | ~333 |
+| 11:34 | Created src/features/hide-stories/index.ts | — | ~50 |
+| 11:35 | Edited src/content/content.ts | 5→8 lines | ~125 |
+| 11:36 | Created src/features/hide-reels/constants.ts | — | ~60 |
+| 11:36 | Created src/features/hide-reels/scanner.ts | — | ~170 |
+| 11:36 | Created src/features/hide-reels/matcher.ts | — | ~100 |
+| 11:36 | Created src/features/hide-reels/actions.ts | — | ~140 |
+| 11:36 | Created src/features/hide-reels/feature.ts | — | ~327 |
+| 11:36 | Created src/features/hide-reels/index.ts | — | ~48 |
+| 11:36 | Created src/features/hide-sponsored/constants.ts | — | ~243 |
+| 11:36 | Created src/features/hide-sponsored/scanner.ts | — | ~406 |
+| 11:36 | Created src/features/hide-sponsored/matcher.ts | — | ~122 |
+| 11:36 | Created src/features/hide-sponsored/actions.ts | — | ~190 |
+| 11:36 | Created src/features/hide-sponsored/feature.ts | — | ~336 |
+| 11:36 | Created src/features/hide-sponsored/index.ts | — | ~51 |
+| 11:36 | Created src/features/hide-suggested/constants.ts | — | ~147 |
+| 11:37 | Created src/features/hide-suggested/scanner.ts | — | ~288 |
+| 11:37 | Created src/features/hide-suggested/matcher.ts | — | ~101 |
+| 11:37 | Created src/features/hide-suggested/actions.ts | — | ~149 |
+| 11:37 | Created src/features/hide-suggested/feature.ts | — | ~343 |
+| 11:37 | Created src/features/hide-suggested/index.ts | — | ~51 |
+| 11:37 | Created src/features/hide-sidebar/constants.ts | — | ~54 |
+| 11:37 | Created src/features/hide-sidebar/scanner.ts | — | ~156 |
+| 11:37 | Created src/features/hide-sidebar/matcher.ts | — | ~100 |
+| 11:37 | Created src/features/hide-sidebar/actions.ts | — | ~72 |
+| 11:37 | Created src/features/hide-sidebar/feature.ts | — | ~337 |
+| 11:37 | Created src/features/hide-sidebar/index.ts | — | ~50 |
+| 11:37 | Created src/features/feed-cleaner/constants.ts | — | ~167 |
+| 11:37 | Created src/features/feed-cleaner/scanner.ts | — | ~266 |
+| 11:37 | Created src/features/feed-cleaner/matcher.ts | — | ~101 |
+| 11:37 | Created src/features/feed-cleaner/actions.ts | — | ~148 |
+| 11:37 | Created src/features/feed-cleaner/feature.ts | — | ~344 |
+| 11:37 | Created src/features/feed-cleaner/index.ts | — | ~50 |
+| 11:37 | Edited src/content/content.ts | added 5 import(s) | ~80 |
+| 11:40 | Session end: 93 writes across 44 files (PLAN.md, package.json, tsconfig.json, .prettierrc, manifest.json) | 2 reads | ~19922 tok |

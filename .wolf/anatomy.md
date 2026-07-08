@@ -1,7 +1,7 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-07-08T08:16:27.598Z
-> Files: 51 tracked | Anatomy hits: 0 | Misses: 0
+> Auto-maintained by OpenWolf. Last scanned: 2026-07-08T08:37:47.538Z
+> Files: 87 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ./
 
@@ -33,7 +33,7 @@
 
 ## src/content/
 
-- `content.ts` (~192 tok)
+- `content.ts` — Feature registrations — side-effect imports trigger featureManager.register() (~273 tok)
 
 ## src/core/context/
 
@@ -74,6 +74,60 @@
 - `defaults.ts` — Exports DEFAULT_SETTINGS (~76 tok)
 - `storage-service.ts` — Exports storageService (~400 tok)
 - `types.ts` — Exports IStorageService (~81 tok)
+
+## src/features/feed-cleaner/
+
+- `actions.ts` — Exports hideFeedNoiseElement, showFeedNoiseElement (~148 tok)
+- `constants.ts` — Catch-all for feed elements not covered by other features (~167 tok)
+- `feature.ts` — Exports FeedCleanerFeature (~344 tok)
+- `index.ts` (~50 tok)
+- `matcher.ts` — Exports isFeedNoiseElement (~101 tok)
+- `scanner.ts` — Exports findFeedNoiseElements (~266 tok)
+
+## src/features/hide-reels/
+
+- `actions.ts` — Exports hideReelElement, showReelElement (~140 tok)
+- `constants.ts` — Exports REELS_SELECTORS (~60 tok)
+- `feature.ts` — Exports HideReelsFeature (~327 tok)
+- `index.ts` (~48 tok)
+- `matcher.ts` — Exports isReelsElement (~100 tok)
+- `scanner.ts` — Exports findReelElements (~170 tok)
+
+## src/features/hide-sidebar/
+
+- `actions.ts` — Exports hideSidebarElement, showSidebarElement (~72 tok)
+- `constants.ts` — Exports SIDEBAR_SELECTORS (~54 tok)
+- `feature.ts` — Exports HideSidebarFeature (~337 tok)
+- `index.ts` (~50 tok)
+- `matcher.ts` — Exports isSidebarElement (~100 tok)
+- `scanner.ts` — Exports findSidebarElements (~156 tok)
+
+## src/features/hide-sponsored/
+
+- `actions.ts` — Exports hideSponsoredPost, showSponsoredPost (~190 tok)
+- `constants.ts` — Sponsored posts are identified by text content, aria attributes, and structural patterns. (~243 tok)
+- `feature.ts` — Exports HideSponsoredFeature (~336 tok)
+- `index.ts` (~51 tok)
+- `matcher.ts` — Exports isSponsoredLabel (~122 tok)
+- `scanner.ts` — Exports findSponsoredElements (~406 tok)
+
+## src/features/hide-stories/
+
+- `actions.ts` — Some story containers are nested — walk up to find the outermost wrapping div (~198 tok)
+- `constants.ts` — Ordered by stability: ARIA/data attrs first, class-based last (~108 tok)
+- `feature.ts` — Exports HideStoriesFeature (~333 tok)
+- `index.ts` (~50 tok)
+- `matcher.ts` — Exports isStoriesElement (~135 tok)
+- `scanner.ts` — Exports findStoryElements (~195 tok)
+
+## src/features/hide-suggested/
+
+- `actions.ts` — Exports hideSuggestedElement, showSuggestedElement (~149 tok)
+- `constants.ts` — Exports SUGGESTED_SELECTORS, SUGGESTED_TEXT_MARKERS (~147 tok)
+- `feature.ts` — Exports HideSuggestedFeature (~343 tok)
+- `index.ts` (~51 tok)
+- `matcher.ts` — Exports isSuggestedElement (~101 tok)
+- `scanner.ts` — Exports findSuggestedElements (~288 tok)
 
 ## src/options/
 
