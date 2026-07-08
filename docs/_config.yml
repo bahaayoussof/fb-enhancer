@@ -1,0 +1,5 @@
+title: FB Enhancer
+description: Clean up your Facebook feed. No data collected.
+theme: minima
+plugins:
+  - jekyll-relative-links

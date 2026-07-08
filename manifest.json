@@ -4,10 +4,7 @@
   "version": "1.0.0",
   "description": "Clean up your Facebook feed — hide sponsored posts, stories, reels, suggested content, and the right sidebar.",
   "permissions": ["storage"],
-  "host_permissions": [
-    "https://www.facebook.com/*",
-    "https://facebook.com/*"
-  ],
+  "host_permissions": ["https://www.facebook.com/*", "https://facebook.com/*"],
   "action": {
     "default_popup": "src/popup/index.html",
     "default_title": "FB Enhancer",
@@ -30,7 +27,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.facebook.com/*", "https://facebook.com/*"],
+      "matches": ["*://*.facebook.com/*"],
       "js": ["src/content/content.ts"],
       "run_at": "document_idle"
     }

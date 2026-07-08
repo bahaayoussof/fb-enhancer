@@ -1,82 +1,109 @@
 # <img src="public/images/logo.png" width="38" height="38" valign="middle"> FB Enhancer
 
-![alt text](image.png)
+![FB Enhancer popup screenshot](image.png)
 
-A lightweight, modern, and highly configurable browser extension to clean up your Facebook feed and layout. Take back control of your social media experience by removing clutter, intrusive ads, algorithmic suggestions, and unused sidebar features.
+A lightweight, modern, and privacy-first browser extension that cleans up your Facebook feed and layout. Take back control of your social media experience by removing sponsored ads, algorithmic suggestions, stories, reels, and sidebar clutter.
 
----
-
-## 🚀 Key Features
-
-- **Feed Cleanup**:
-  - **Sponsored Posts**: Instantly hides paid advertisements.
-  - **Suggested Posts**: Removes algorithmic suggestions (e.g., "Suggested for you", "Suggested Groups", etc.).
-  - **General Feed Cleaner**: General cleanup and normalization of the main feed.
-- **Media Filter**:
-  - **Stories**: Hides the Stories row at the top of the feed.
-  - **Reels**: Hides Reels and short video carousels from clogging your feed.
-- **Layout Customization**:
-  - **Right Sidebar**: Hides the cluttered right-hand column (sponsored blocks, algorithmic suggestions, and game invitations).
-- **Dynamic Customization**:
-  - Toggle individual filters on/off using the extension's interactive popup.
-  - **Enable All / Disable All** actions with a single click.
+Compatible with **Google Chrome**, **Microsoft Edge**, and all Chromium-based browsers.
 
 ---
 
-## 🛠️ Installation Guide
+## Features
 
-Follow these steps to install the extension in **Developer Mode** on any Chromium-based browser (Google Chrome, Microsoft Edge, Brave, Opera, etc.):
+**Feed**
+- **Sponsored Posts** — Hides paid advertisements from the feed
+- **Suggested Posts** — Removes algorithmic suggestions ("Suggested for you", "Suggested Groups", etc.)
+- **Feed Cleaner** — General cleanup and normalization of the main feed
 
-### Prerequisites
+**Media**
+- **Stories** — Hides the Stories bar at the top of the feed
+- **Reels** — Hides Reels and short-video carousels
 
-Make sure you have [Node.js](https://nodejs.org/) installed (version 18 or later is recommended).
+**Layout**
+- **Right Sidebar** — Hides the right-hand column (sponsored blocks, suggestions, game invitations)
 
-### Steps
-
-1.  **Clone or Download** this repository to your local machine.
-2.  Open your terminal inside the project directory and install the necessary dependencies:
-    ```bash
-    npm install
-    ```
-3.  Build the project to compile TypeScript, React, and Vite assets:
-    ```bash
-    npm run build
-    ```
-    This will create a production-ready `/dist` directory in the project root.
-4.  Open your browser and navigate to the Extensions management page:
-    - In Chrome: `chrome://extensions/`
-    - In Edge: `edge://extensions/`
-5.  Turn on **Developer Mode** (usually a toggle switch in the top right-hand corner).
-6.  Click **Load unpacked** (top-left button).
-7.  Select the `dist` directory located inside this project folder.
-8.  The **FB Enhancer** extension will now be loaded and active!
+**Controls**
+- Toggle each filter individually from the popup
+- Enable All / Disable All with one click
+- Settings persist across sessions and sync across your devices via browser sync
+- Changes apply instantly — no manual refresh needed
 
 ---
 
-## 📖 Usage Instructions
+## Installation (Developer Mode)
 
-1.  **Pin the Extension**: For easy access, pin the **FB Enhancer** icon (the protective blue shield) to your browser toolbar.
-2.  **Open the Controls**: Click the extension icon on the toolbar to open the control panel.
-3.  **Toggle Features**:
-    - Inside the panel, you will see categories for **Feed**, **Media**, and **Layout**.
-    - Use the toggle switches to enable or disable specific features (e.g., toggle off _Stories_ or _Reels_ if you prefer to see them, or turn on _Sponsored Posts_ to block ads).
-    - You can also click **Enable all** or **Disable all** at the top right of the popup to configure all options at once.
-4.  **Refresh to Apply**: The changes will take effect automatically as soon as you toggle them, or upon reloading any active `facebook.com` tab.
+> For production installation, load from the Chrome Web Store or Microsoft Edge Add-ons store once published.
 
----
+**Prerequisites:** [Node.js](https://nodejs.org/) v18+
 
-## 💻 Development Scripts
+```bash
+git clone https://github.com/bahaayoussof/fb-enhancer.git
+cd fb-enhancer
+npm install
+npm run build
+```
 
-The project includes several npm scripts for local development and build management:
+Then:
 
-- `npm run dev` — Starts Vite in watch mode to automatically rebuild the extension on file changes.
-- `npm run build` — Compiles and builds the production extension into the `/dist` directory.
-- `npm run package` — Runs the build and packages the output files into a production ZIP archive (`fb-enhancer-v1.0.0.zip`) for distribution.
-- `npm run lint` — Performs ESLint static analysis checking on source files.
-- `npm run format` — Automatically formats codebase using Prettier.
+1. Open `chrome://extensions/` (Chrome) or `edge://extensions/` (Edge)
+2. Enable **Developer Mode**
+3. Click **Load unpacked**
+4. Select the `dist/` folder
 
 ---
 
-## 🛡️ License
+## Development
 
-This project is open-source and available under the MIT License.
+```bash
+npm run dev       # Vite watch mode — rebuilds on file changes
+npm run build     # Production build → dist/
+npm run package   # Build + ZIP for store submission
+npm run lint      # ESLint static analysis
+npm run format    # Prettier formatting
+```
+
+---
+
+## Privacy
+
+**FB Enhancer collects no user data.**
+
+- No analytics, no telemetry, no tracking
+- No external servers or APIs
+- No browsing history or page content is read or transmitted
+- Settings are stored locally using the browser's built-in Storage API
+- All processing happens on your device
+
+[Read the full Privacy Policy →](https://zokavic1.github.io/fb-enhancer/privacy-policy)
+
+---
+
+## Permissions
+
+| Permission | Why it is needed |
+|---|---|
+| `storage` | Saves your toggle preferences so they persist between sessions |
+| `host_permissions: facebook.com` | Required to inject the content script that hides elements on Facebook pages |
+
+No other permissions are requested. `activeTab`, `tabs`, `scripting`, `cookies`, `history`, and `webRequest` are intentionally **not** requested.
+
+[Read the full Permission Justification →](https://zokavic1.github.io/fb-enhancer/permissions)
+
+---
+
+## Browser Compatibility
+
+| Browser | Supported |
+|---|---|
+| Google Chrome 88+ | ✓ |
+| Microsoft Edge 88+ | ✓ |
+| Brave | ✓ |
+| Opera | ✓ |
+| Any Chromium-based browser with MV3 support | ✓ |
+| Firefox | ✗ (uses MV2, not currently supported) |
+
+---
+
+## License
+
+MIT — see [LICENSE](./LICENSE)
