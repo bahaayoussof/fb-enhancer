@@ -21,6 +21,8 @@
 
 <!-- Mistakes made and corrected. Each entry prevents the same mistake recurring. -->
 <!-- Format: [YYYY-MM-DD] Description of what went wrong and what to do instead. -->
+- **[2026-07-08]** Custom `<button>`-based toggles/switches need `appearance: none; -webkit-appearance: none;` — without it, native OS/browser chrome can override background-color/border-radius/border even when those are set, making the toggle look like a flat native switch instead of the intended custom style.
+- **[2026-07-08]** FeatureToggle is `<button role="switch" aria-checked>`, not `<input type="checkbox">`. Toggle CSS snippets copied from elsewhere often key state off `:checked` / `:has(> input:checked)` — those never match here. Use `.toggle[aria-checked='true']` instead. Also: don't keep both an `::after`-translate knob and a `::before`-grid knob in the same ruleset — they render as two overlapping thumbs.
 
 ## Decision Log
 

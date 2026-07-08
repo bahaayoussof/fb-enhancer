@@ -1,794 +1,222 @@
 {
-  "session_id": "session-2026-07-08-1002",
-  "started": "2026-07-08T07:02:40.857Z",
+  "session_id": "session-2026-07-08-1259",
+  "started": "2026-07-08T09:59:03.593Z",
   "files_read": {
-    "D:/Private/fb-enhancer/.docs/AI_RULES.md": {
-      "count": 1,
-      "tokens": 0,
-      "first_read": "2026-07-08T07:03:50.668Z"
-    },
-    "D:/Private/fb-enhancer/dist/manifest.json": {
-      "count": 1,
-      "tokens": 196,
-      "first_read": "2026-07-08T07:12:51.942Z"
-    },
-    "D:/Private/fb-enhancer/src/core/scanner/dom-scanner.ts": {
-      "count": 1,
-      "tokens": 105,
-      "first_read": "2026-07-08T08:45:50.956Z"
-    },
-    "D:/Private/fb-enhancer/src/core/pipeline/extension-pipeline.ts": {
-      "count": 2,
-      "tokens": 774,
-      "first_read": "2026-07-08T08:45:51.318Z"
-    },
-    "D:/Private/fb-enhancer/src/core/observer/observer-manager.ts": {
-      "count": 1,
-      "tokens": 218,
-      "first_read": "2026-07-08T08:45:51.913Z"
-    },
-    "D:/Private/fb-enhancer/src/features/hide-stories/constants.ts": {
-      "count": 1,
-      "tokens": 108,
-      "first_read": "2026-07-08T08:50:54.617Z"
-    },
-    "D:/Private/fb-enhancer/src/ui/popup/Popup.tsx": {
-      "count": 1,
-      "tokens": 750,
-      "first_read": "2026-07-08T08:56:22.280Z"
-    },
-    "D:/Private/fb-enhancer/src/ui/popup/Popup.module.css": {
-      "count": 1,
-      "tokens": 216,
-      "first_read": "2026-07-08T08:56:22.295Z"
+    "D:/Private/fb-enhancer/src/ui/popup/components/FeatureToggle.module.css": {
+      "count": 3,
+      "tokens": 674,
+      "first_read": "2026-07-08T10:09:13.307Z"
     },
     "D:/Private/fb-enhancer/src/ui/popup/hooks/useFeatureSettings.ts": {
       "count": 1,
-      "tokens": 394,
-      "first_read": "2026-07-08T08:56:32.419Z"
+      "tokens": 465,
+      "first_read": "2026-07-08T10:19:02.570Z"
     },
-    "D:/Private/fb-enhancer/src/ui/popup/components/FeatureToggle.module.css": {
-      "count": 1,
-      "tokens": 316,
-      "first_read": "2026-07-08T08:56:32.757Z"
+    "D:/Private/fb-enhancer/src/background/background.ts": {
+      "count": 2,
+      "tokens": 428,
+      "first_read": "2026-07-08T10:19:14.334Z"
     },
-    "D:/Private/fb-enhancer/manifest.json": {
+    "D:/Private/fb-enhancer/src/core/messaging/types.ts": {
       "count": 1,
-      "tokens": 196,
-      "first_read": "2026-07-08T08:58:09.980Z"
+      "tokens": 119,
+      "first_read": "2026-07-08T10:19:42.771Z"
     },
-    "D:/Private/fb-enhancer/package.json": {
+    "D:/Private/fb-enhancer/src/core/storage/storage-service.ts": {
       "count": 1,
-      "tokens": 238,
-      "first_read": "2026-07-08T08:58:24.534Z"
+      "tokens": 400,
+      "first_read": "2026-07-08T10:19:43.075Z"
+    },
+    "d:/Private/fb-enhancer/src/ui/popup/components/FeatureToggle.module.css": {
+      "count": 3,
+      "tokens": 519,
+      "first_read": "2026-07-08T10:22:29.656Z"
+    },
+    "d:/Private/fb-enhancer/src/ui/popup/components/FeatureToggle.tsx": {
+      "count": 1,
+      "tokens": 237,
+      "first_read": "2026-07-08T10:22:40.078Z"
+    },
+    "d:/Private/fb-enhancer/package.json": {
+      "count": 1,
+      "tokens": 273,
+      "first_read": "2026-07-08T10:23:25.434Z"
+    },
+    "D:/Private/fb-enhancer/src/core/messaging/messaging-service.ts": {
+      "count": 1,
+      "tokens": 328,
+      "first_read": "2026-07-08T10:29:59.330Z"
+    },
+    "D:/Private/fb-enhancer/src/core/storage/types.ts": {
+      "count": 1,
+      "tokens": 81,
+      "first_read": "2026-07-08T10:30:28.834Z"
+    },
+    "D:/Private/fb-enhancer/src/ui/popup/Popup.module.css": {
+      "count": 1,
+      "tokens": 566,
+      "first_read": "2026-07-08T10:35:33.942Z"
+    },
+    "D:/Private/fb-enhancer/src/ui/popup/components/CategoryGroup.module.css": {
+      "count": 1,
+      "tokens": 98,
+      "first_read": "2026-07-08T10:35:34.456Z"
+    },
+    "d:/Private/fb-enhancer/src/ui/popup/Popup.tsx": {
+      "count": 1,
+      "tokens": 797,
+      "first_read": "2026-07-08T10:47:33.448Z"
+    },
+    "d:/Private/fb-enhancer/src/ui/popup/Popup.module.css": {
+      "count": 1,
+      "tokens": 940,
+      "first_read": "2026-07-08T10:47:36.435Z"
+    },
+    "d:/Private/fb-enhancer/manifest.json": {
+      "count": 1,
+      "tokens": 290,
+      "first_read": "2026-07-08T10:53:28.635Z"
+    },
+    "d:/Private/fb-enhancer/public/icons/icon32.png": {
+      "count": 1,
+      "tokens": 0,
+      "first_read": "2026-07-08T10:53:42.034Z"
+    },
+    "d:/Private/fb-enhancer/public/images/logo.png": {
+      "count": 1,
+      "tokens": 0,
+      "first_read": "2026-07-08T10:53:42.114Z"
+    },
+    "d:/Private/fb-enhancer/dist/icons/icon32.png": {
+      "count": 1,
+      "tokens": 0,
+      "first_read": "2026-07-08T10:54:42.453Z"
     }
   },
   "files_written": [
     {
-      "file": "D:/Private/fb-enhancer/.docs/PLAN.md",
-      "action": "create",
-      "tokens": 4290,
-      "at": "2026-07-08T07:05:34.069Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/package.json",
-      "action": "create",
-      "tokens": 238,
-      "at": "2026-07-08T07:10:31.667Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/tsconfig.json",
-      "action": "create",
-      "tokens": 200,
-      "at": "2026-07-08T07:10:32.101Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/.prettierrc",
-      "action": "create",
-      "tokens": 38,
-      "at": "2026-07-08T07:10:32.524Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/manifest.json",
-      "action": "create",
-      "tokens": 196,
-      "at": "2026-07-08T07:10:32.980Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/.eslintrc.cjs",
-      "action": "create",
-      "tokens": 222,
-      "at": "2026-07-08T07:10:39.358Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/vite.config.ts",
-      "action": "create",
-      "tokens": 203,
-      "at": "2026-07-08T07:10:41.738Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/popup/index.html",
-      "action": "create",
-      "tokens": 105,
-      "at": "2026-07-08T07:10:47.302Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/options/index.html",
-      "action": "create",
-      "tokens": 89,
-      "at": "2026-07-08T07:10:48.445Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/popup/popup.tsx",
-      "action": "create",
-      "tokens": 60,
-      "at": "2026-07-08T07:10:49.628Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/options/options.tsx",
-      "action": "create",
-      "tokens": 64,
-      "at": "2026-07-08T07:10:50.403Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/content/content.ts",
-      "action": "create",
-      "tokens": 12,
-      "at": "2026-07-08T07:10:51.174Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/background/background.ts",
-      "action": "create",
-      "tokens": 15,
-      "at": "2026-07-08T07:10:51.781Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/shared/types/index.ts",
-      "action": "create",
-      "tokens": 59,
-      "at": "2026-07-08T07:25:00.283Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/logger/types.ts",
-      "action": "create",
-      "tokens": 67,
-      "at": "2026-07-08T07:25:01.077Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/logger/logger.ts",
-      "action": "create",
-      "tokens": 187,
-      "at": "2026-07-08T07:25:02.628Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/messaging/types.ts",
-      "action": "create",
-      "tokens": 119,
-      "at": "2026-07-08T07:25:04.198Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/messaging/messaging-service.ts",
-      "action": "create",
-      "tokens": 328,
-      "at": "2026-07-08T07:25:06.794Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/content/content.ts",
+      "file": "D:/Private/fb-enhancer/src/ui/popup/components/FeatureToggle.module.css",
       "action": "edit",
-      "tokens": 94,
-      "at": "2026-07-08T07:25:13.177Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/background/background.ts",
-      "action": "edit",
-      "tokens": 136,
-      "at": "2026-07-08T07:25:14.736Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/popup/popup.tsx",
-      "action": "edit",
-      "tokens": 216,
-      "at": "2026-07-08T07:25:21.609Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/options/options.tsx",
-      "action": "edit",
-      "tokens": 121,
-      "at": "2026-07-08T07:25:23.626Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/context/types.ts",
-      "action": "create",
-      "tokens": 57,
-      "at": "2026-07-08T08:05:06.383Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/scanner/types.ts",
-      "action": "create",
-      "tokens": 36,
-      "at": "2026-07-08T08:05:07.930Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/observer/types.ts",
-      "action": "create",
-      "tokens": 34,
-      "at": "2026-07-08T08:05:09.075Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/feature-manager/types.ts",
-      "action": "create",
-      "tokens": 95,
-      "at": "2026-07-08T08:05:09.906Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/context/context-builder.ts",
-      "action": "create",
       "tokens": 271,
-      "at": "2026-07-08T08:05:17.176Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/scanner/dom-scanner.ts",
-      "action": "create",
-      "tokens": 105,
-      "at": "2026-07-08T08:05:18.646Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/observer/observer-manager.ts",
-      "action": "create",
-      "tokens": 218,
-      "at": "2026-07-08T08:05:21.012Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/feature-manager/feature-manager.ts",
-      "action": "create",
-      "tokens": 418,
-      "at": "2026-07-08T08:05:26.294Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/pipeline/extension-pipeline.ts",
-      "action": "create",
-      "tokens": 399,
-      "at": "2026-07-08T08:05:34.348Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/content/content.ts",
-      "action": "edit",
-      "tokens": 174,
-      "at": "2026-07-08T08:05:45.205Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/storage/types.ts",
-      "action": "create",
-      "tokens": 81,
-      "at": "2026-07-08T08:08:31.237Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/storage/defaults.ts",
-      "action": "create",
-      "tokens": 76,
-      "at": "2026-07-08T08:08:32.458Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/storage/storage-service.ts",
-      "action": "create",
-      "tokens": 400,
-      "at": "2026-07-08T08:08:41.074Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/pipeline/extension-pipeline.ts",
-      "action": "edit",
-      "tokens": 302,
-      "at": "2026-07-08T08:08:54.173Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/content/content.ts",
-      "action": "edit",
-      "tokens": 26,
-      "at": "2026-07-08T08:08:59.298Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/background/background.ts",
-      "action": "edit",
-      "tokens": 260,
-      "at": "2026-07-08T08:09:08.109Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/ui/popup/hooks/useFeatureSettings.ts",
-      "action": "create",
-      "tokens": 394,
-      "at": "2026-07-08T08:11:36.457Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/ui/popup/components/FeatureToggle.tsx",
-      "action": "create",
-      "tokens": 237,
-      "at": "2026-07-08T08:11:42.227Z"
+      "at": "2026-07-08T10:09:32.917Z"
     },
     {
       "file": "D:/Private/fb-enhancer/src/ui/popup/components/FeatureToggle.module.css",
-      "action": "create",
-      "tokens": 316,
-      "at": "2026-07-08T08:11:46.551Z"
+      "action": "edit",
+      "tokens": 459,
+      "at": "2026-07-08T10:12:07.598Z"
     },
     {
-      "file": "D:/Private/fb-enhancer/src/ui/popup/components/SearchBar.tsx",
-      "action": "create",
-      "tokens": 121,
-      "at": "2026-07-08T08:11:50.912Z"
+      "file": "D:/Private/fb-enhancer/src/ui/popup/Popup.module.css",
+      "action": "edit",
+      "tokens": 24,
+      "at": "2026-07-08T10:16:15.994Z"
     },
     {
-      "file": "D:/Private/fb-enhancer/src/ui/popup/components/SearchBar.module.css",
+      "file": "D:/Private/fb-enhancer/src/ui/popup/Popup.tsx",
       "action": "create",
-      "tokens": 88,
-      "at": "2026-07-08T08:11:56.344Z"
+      "tokens": 797,
+      "at": "2026-07-08T10:16:28.810Z"
     },
     {
-      "file": "D:/Private/fb-enhancer/src/ui/popup/components/CategoryGroup.tsx",
+      "file": "D:/Private/fb-enhancer/src/core/messaging/types.ts",
+      "action": "edit",
+      "tokens": 86,
+      "at": "2026-07-08T10:19:49.286Z"
+    },
+    {
+      "file": "D:/Private/fb-enhancer/src/background/background.ts",
+      "action": "edit",
+      "tokens": 180,
+      "at": "2026-07-08T10:19:56.348Z"
+    },
+    {
+      "file": "D:/Private/fb-enhancer/src/ui/popup/hooks/useFeatureSettings.ts",
+      "action": "edit",
+      "tokens": 143,
+      "at": "2026-07-08T10:20:03.995Z"
+    },
+    {
+      "file": "D:/Private/fb-enhancer/src/ui/popup/Popup.module.css",
+      "action": "edit",
+      "tokens": 24,
+      "at": "2026-07-08T10:20:08.758Z"
+    },
+    {
+      "file": "d:/Private/fb-enhancer/src/ui/popup/components/FeatureToggle.module.css",
+      "action": "edit",
+      "tokens": 62,
+      "at": "2026-07-08T10:25:32.428Z"
+    },
+    {
+      "file": "D:/Private/fb-enhancer/src/core/messaging/messaging-service.ts",
+      "action": "edit",
+      "tokens": 136,
+      "at": "2026-07-08T10:31:47.863Z"
+    },
+    {
+      "file": "D:/Private/fb-enhancer/src/background/background.ts",
+      "action": "edit",
+      "tokens": 150,
+      "at": "2026-07-08T10:31:55.668Z"
+    },
+    {
+      "file": "D:/Private/fb-enhancer/src/ui/popup/Popup.module.css",
       "action": "create",
-      "tokens": 261,
-      "at": "2026-07-08T08:12:03.725Z"
+      "tokens": 940,
+      "at": "2026-07-08T10:36:09.030Z"
     },
     {
       "file": "D:/Private/fb-enhancer/src/ui/popup/components/CategoryGroup.module.css",
       "action": "create",
-      "tokens": 57,
-      "at": "2026-07-08T08:12:04.953Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/ui/popup/Popup.tsx",
-      "action": "create",
-      "tokens": 750,
-      "at": "2026-07-08T08:12:15.241Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/ui/popup/Popup.module.css",
-      "action": "create",
-      "tokens": 216,
-      "at": "2026-07-08T08:12:18.782Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/popup/popup.tsx",
-      "action": "edit",
-      "tokens": 55,
-      "at": "2026-07-08T08:12:27.021Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/shared/dom/safe-remove.ts",
-      "action": "create",
-      "tokens": 40,
-      "at": "2026-07-08T08:16:17.221Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/shared/dom/safe-hide.ts",
-      "action": "create",
-      "tokens": 107,
-      "at": "2026-07-08T08:16:18.422Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/shared/dom/parent-finder.ts",
-      "action": "create",
-      "tokens": 156,
-      "at": "2026-07-08T08:16:20.343Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/shared/dom/selector-helpers.ts",
-      "action": "create",
-      "tokens": 290,
-      "at": "2026-07-08T08:16:23.696Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/shared/utils/retry.ts",
-      "action": "create",
-      "tokens": 156,
-      "at": "2026-07-08T08:16:25.484Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/shared/utils/debounce.ts",
-      "action": "create",
-      "tokens": 96,
-      "at": "2026-07-08T08:16:27.027Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/shared/utils/is-facebook.ts",
-      "action": "create",
-      "tokens": 34,
-      "at": "2026-07-08T08:16:27.611Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-stories/constants.ts",
-      "action": "create",
-      "tokens": 108,
-      "at": "2026-07-08T08:34:45.531Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-stories/scanner.ts",
-      "action": "create",
-      "tokens": 195,
-      "at": "2026-07-08T08:34:47.316Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-stories/matcher.ts",
-      "action": "create",
-      "tokens": 135,
-      "at": "2026-07-08T08:34:49.787Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-stories/actions.ts",
-      "action": "create",
-      "tokens": 198,
-      "at": "2026-07-08T08:34:52.785Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-stories/feature.ts",
-      "action": "create",
-      "tokens": 333,
-      "at": "2026-07-08T08:34:55.567Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-stories/index.ts",
-      "action": "create",
-      "tokens": 50,
-      "at": "2026-07-08T08:34:56.209Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/content/content.ts",
-      "action": "edit",
-      "tokens": 125,
-      "at": "2026-07-08T08:35:02.859Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-reels/constants.ts",
-      "action": "create",
-      "tokens": 60,
-      "at": "2026-07-08T08:36:12.492Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-reels/scanner.ts",
-      "action": "create",
-      "tokens": 170,
-      "at": "2026-07-08T08:36:14.885Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-reels/matcher.ts",
-      "action": "create",
       "tokens": 100,
-      "at": "2026-07-08T08:36:17.091Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-reels/actions.ts",
-      "action": "create",
-      "tokens": 140,
-      "at": "2026-07-08T08:36:19.362Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-reels/feature.ts",
-      "action": "create",
-      "tokens": 327,
-      "at": "2026-07-08T08:36:23.641Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-reels/index.ts",
-      "action": "create",
-      "tokens": 48,
-      "at": "2026-07-08T08:36:24.160Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-sponsored/constants.ts",
-      "action": "create",
-      "tokens": 243,
-      "at": "2026-07-08T08:36:33.422Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-sponsored/scanner.ts",
-      "action": "create",
-      "tokens": 406,
-      "at": "2026-07-08T08:36:38.368Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-sponsored/matcher.ts",
-      "action": "create",
-      "tokens": 122,
-      "at": "2026-07-08T08:36:40.639Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-sponsored/actions.ts",
-      "action": "create",
-      "tokens": 190,
-      "at": "2026-07-08T08:36:43.898Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-sponsored/feature.ts",
-      "action": "create",
-      "tokens": 336,
-      "at": "2026-07-08T08:36:46.511Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-sponsored/index.ts",
-      "action": "create",
-      "tokens": 51,
-      "at": "2026-07-08T08:36:47.181Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-suggested/constants.ts",
-      "action": "create",
-      "tokens": 147,
-      "at": "2026-07-08T08:36:56.783Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-suggested/scanner.ts",
-      "action": "create",
-      "tokens": 288,
-      "at": "2026-07-08T08:37:00.889Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-suggested/matcher.ts",
-      "action": "create",
-      "tokens": 101,
-      "at": "2026-07-08T08:37:02.638Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-suggested/actions.ts",
-      "action": "create",
-      "tokens": 149,
-      "at": "2026-07-08T08:37:04.942Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-suggested/feature.ts",
-      "action": "create",
-      "tokens": 343,
-      "at": "2026-07-08T08:37:07.604Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-suggested/index.ts",
-      "action": "create",
-      "tokens": 51,
-      "at": "2026-07-08T08:37:08.039Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-sidebar/constants.ts",
-      "action": "create",
-      "tokens": 54,
-      "at": "2026-07-08T08:37:14.218Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-sidebar/scanner.ts",
-      "action": "create",
-      "tokens": 156,
-      "at": "2026-07-08T08:37:16.571Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-sidebar/matcher.ts",
-      "action": "create",
-      "tokens": 100,
-      "at": "2026-07-08T08:37:18.471Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-sidebar/actions.ts",
-      "action": "create",
-      "tokens": 72,
-      "at": "2026-07-08T08:37:19.660Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-sidebar/feature.ts",
-      "action": "create",
-      "tokens": 337,
-      "at": "2026-07-08T08:37:22.350Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-sidebar/index.ts",
-      "action": "create",
-      "tokens": 50,
-      "at": "2026-07-08T08:37:22.920Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/feed-cleaner/constants.ts",
-      "action": "create",
-      "tokens": 167,
-      "at": "2026-07-08T08:37:29.228Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/feed-cleaner/scanner.ts",
-      "action": "create",
-      "tokens": 266,
-      "at": "2026-07-08T08:37:33.072Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/feed-cleaner/matcher.ts",
-      "action": "create",
-      "tokens": 101,
-      "at": "2026-07-08T08:37:34.980Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/feed-cleaner/actions.ts",
-      "action": "create",
-      "tokens": 148,
-      "at": "2026-07-08T08:37:37.284Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/feed-cleaner/feature.ts",
-      "action": "create",
-      "tokens": 344,
-      "at": "2026-07-08T08:37:40.018Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/feed-cleaner/index.ts",
-      "action": "create",
-      "tokens": 50,
-      "at": "2026-07-08T08:37:40.436Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/content/content.ts",
-      "action": "edit",
-      "tokens": 80,
-      "at": "2026-07-08T08:37:47.552Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/scanner/dom-scanner.ts",
-      "action": "edit",
-      "tokens": 205,
-      "at": "2026-07-08T08:45:59.997Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/pipeline/extension-pipeline.ts",
-      "action": "edit",
-      "tokens": 757,
-      "at": "2026-07-08T08:46:16.289Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/shared/dom/selector-engine.ts",
-      "action": "create",
-      "tokens": 292,
-      "at": "2026-07-08T08:50:33.710Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/core/pipeline/extension-pipeline.ts",
-      "action": "edit",
-      "tokens": 164,
-      "at": "2026-07-08T08:50:47.483Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/features/hide-stories/constants.ts",
-      "action": "edit",
-      "tokens": 266,
-      "at": "2026-07-08T08:51:03.345Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/ui/popup/hooks/useFeatureSettings.ts",
-      "action": "edit",
-      "tokens": 379,
-      "at": "2026-07-08T08:56:42.477Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/ui/popup/Popup.tsx",
-      "action": "edit",
-      "tokens": 1024,
-      "at": "2026-07-08T08:57:02.842Z"
-    },
-    {
-      "file": "D:/Private/fb-enhancer/src/ui/popup/Popup.module.css",
-      "action": "edit",
-      "tokens": 282,
-      "at": "2026-07-08T08:57:12.556Z"
+      "at": "2026-07-08T10:36:14.374Z"
     },
     {
       "file": "D:/Private/fb-enhancer/src/ui/popup/components/FeatureToggle.module.css",
-      "action": "edit",
-      "tokens": 83,
-      "at": "2026-07-08T08:57:18.958Z"
+      "action": "create",
+      "tokens": 519,
+      "at": "2026-07-08T10:36:25.575Z"
     },
     {
-      "file": "D:/Private/fb-enhancer/manifest.json",
+      "file": "d:/Private/fb-enhancer/src/ui/popup/components/FeatureToggle.module.css",
       "action": "edit",
-      "tokens": 306,
-      "at": "2026-07-08T08:58:19.422Z"
+      "tokens": 460,
+      "at": "2026-07-08T10:39:47.099Z"
     },
     {
-      "file": "D:/Private/fb-enhancer/package.json",
+      "file": "d:/Private/fb-enhancer/src/ui/popup/components/FeatureToggle.tsx",
       "action": "edit",
-      "tokens": 6,
-      "at": "2026-07-08T08:58:30.433Z"
+      "tokens": 10,
+      "at": "2026-07-08T10:39:52.649Z"
     },
     {
-      "file": "D:/Private/fb-enhancer/package.json",
+      "file": "d:/Private/fb-enhancer/src/ui/popup/Popup.tsx",
       "action": "edit",
       "tokens": 70,
-      "at": "2026-07-08T08:58:35.946Z"
+      "at": "2026-07-08T10:47:43.176Z"
     },
     {
-      "file": "D:/Private/fb-enhancer/manifest.json",
+      "file": "d:/Private/fb-enhancer/src/ui/popup/Popup.module.css",
       "action": "edit",
-      "tokens": 3,
-      "at": "2026-07-08T09:01:02.988Z"
+      "tokens": 141,
+      "at": "2026-07-08T10:47:53.392Z"
     }
   ],
   "edit_counts": {
-    ".docs/PLAN.md": 1,
-    "package.json": 3,
-    "tsconfig.json": 1,
-    ".prettierrc": 1,
-    "manifest.json": 3,
-    ".eslintrc.cjs": 1,
-    "vite.config.ts": 1,
-    "src/popup/index.html": 1,
-    "src/options/index.html": 1,
-    "src/popup/popup.tsx": 3,
-    "src/options/options.tsx": 2,
-    "src/content/content.ts": 6,
-    "src/background/background.ts": 3,
-    "src/shared/types/index.ts": 1,
-    "src/core/logger/types.ts": 1,
-    "src/core/logger/logger.ts": 1,
-    "src/core/messaging/types.ts": 1,
-    "src/core/messaging/messaging-service.ts": 1,
-    "src/core/context/types.ts": 1,
-    "src/core/scanner/types.ts": 1,
-    "src/core/observer/types.ts": 1,
-    "src/core/feature-manager/types.ts": 1,
-    "src/core/context/context-builder.ts": 1,
-    "src/core/scanner/dom-scanner.ts": 2,
-    "src/core/observer/observer-manager.ts": 1,
-    "src/core/feature-manager/feature-manager.ts": 1,
-    "src/core/pipeline/extension-pipeline.ts": 4,
-    "src/core/storage/types.ts": 1,
-    "src/core/storage/defaults.ts": 1,
-    "src/core/storage/storage-service.ts": 1,
-    "src/ui/popup/hooks/useFeatureSettings.ts": 2,
-    "src/ui/popup/components/FeatureToggle.tsx": 1,
-    "src/ui/popup/components/FeatureToggle.module.css": 2,
-    "src/ui/popup/components/SearchBar.tsx": 1,
-    "src/ui/popup/components/SearchBar.module.css": 1,
-    "src/ui/popup/components/CategoryGroup.tsx": 1,
-    "src/ui/popup/components/CategoryGroup.module.css": 1,
+    "src/ui/popup/components/FeatureToggle.module.css": 5,
+    "src/ui/popup/Popup.module.css": 4,
     "src/ui/popup/Popup.tsx": 2,
-    "src/ui/popup/Popup.module.css": 2,
-    "src/shared/dom/safe-remove.ts": 1,
-    "src/shared/dom/safe-hide.ts": 1,
-    "src/shared/dom/parent-finder.ts": 1,
-    "src/shared/dom/selector-helpers.ts": 1,
-    "src/shared/utils/retry.ts": 1,
-    "src/shared/utils/debounce.ts": 1,
-    "src/shared/utils/is-facebook.ts": 1,
-    "src/features/hide-stories/constants.ts": 2,
-    "src/features/hide-stories/scanner.ts": 1,
-    "src/features/hide-stories/matcher.ts": 1,
-    "src/features/hide-stories/actions.ts": 1,
-    "src/features/hide-stories/feature.ts": 1,
-    "src/features/hide-stories/index.ts": 1,
-    "src/features/hide-reels/constants.ts": 1,
-    "src/features/hide-reels/scanner.ts": 1,
-    "src/features/hide-reels/matcher.ts": 1,
-    "src/features/hide-reels/actions.ts": 1,
-    "src/features/hide-reels/feature.ts": 1,
-    "src/features/hide-reels/index.ts": 1,
-    "src/features/hide-sponsored/constants.ts": 1,
-    "src/features/hide-sponsored/scanner.ts": 1,
-    "src/features/hide-sponsored/matcher.ts": 1,
-    "src/features/hide-sponsored/actions.ts": 1,
-    "src/features/hide-sponsored/feature.ts": 1,
-    "src/features/hide-sponsored/index.ts": 1,
-    "src/features/hide-suggested/constants.ts": 1,
-    "src/features/hide-suggested/scanner.ts": 1,
-    "src/features/hide-suggested/matcher.ts": 1,
-    "src/features/hide-suggested/actions.ts": 1,
-    "src/features/hide-suggested/feature.ts": 1,
-    "src/features/hide-suggested/index.ts": 1,
-    "src/features/hide-sidebar/constants.ts": 1,
-    "src/features/hide-sidebar/scanner.ts": 1,
-    "src/features/hide-sidebar/matcher.ts": 1,
-    "src/features/hide-sidebar/actions.ts": 1,
-    "src/features/hide-sidebar/feature.ts": 1,
-    "src/features/hide-sidebar/index.ts": 1,
-    "src/features/feed-cleaner/constants.ts": 1,
-    "src/features/feed-cleaner/scanner.ts": 1,
-    "src/features/feed-cleaner/matcher.ts": 1,
-    "src/features/feed-cleaner/actions.ts": 1,
-    "src/features/feed-cleaner/feature.ts": 1,
-    "src/features/feed-cleaner/index.ts": 1,
-    "src/shared/dom/selector-engine.ts": 1
+    "src/core/messaging/types.ts": 1,
+    "src/background/background.ts": 2,
+    "src/ui/popup/hooks/useFeatureSettings.ts": 1,
+    "src/core/messaging/messaging-service.ts": 1,
+    "src/ui/popup/components/CategoryGroup.module.css": 1,
+    "src/ui/popup/components/FeatureToggle.tsx": 1
   },
-  "anatomy_hits": 11,
-  "anatomy_misses": 1,
-  "repeated_reads_warned": 1,
+  "anatomy_hits": 15,
+  "anatomy_misses": 3,
+  "repeated_reads_warned": 5,
   "cerebrum_warnings": 0,
-  "stop_count": 10
+  "stop_count": 12
 }

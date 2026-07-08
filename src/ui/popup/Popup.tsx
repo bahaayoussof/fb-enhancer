@@ -56,14 +56,34 @@ export function Popup() {
           <p className={styles.loading}>Loading…</p>
         ) : (
           <>
-            <CategoryGroup title="Feed" features={FEED_FEATURES} settings={settings} onToggle={toggle} />
-            <CategoryGroup title="Media" features={MEDIA_FEATURES} settings={settings} onToggle={toggle} />
-            <CategoryGroup title="Layout" features={LAYOUT_FEATURES} settings={settings} onToggle={toggle} />
+            <CategoryGroup
+              title="Feed"
+              features={FEED_FEATURES}
+              settings={settings}
+              onToggle={toggle}
+            />
+            <CategoryGroup
+              title="Media"
+              features={MEDIA_FEATURES}
+              settings={settings}
+              onToggle={toggle}
+            />
+            <CategoryGroup
+              title="Layout"
+              features={LAYOUT_FEATURES}
+              settings={settings}
+              onToggle={toggle}
+            />
           </>
         )}
       </main>
 
-      <footer className={styles.footer}>v{VERSION}</footer>
+      <footer className={styles.footer}>
+        <span>
+          © {new Date().getFullYear()} <span className={styles.footerAuthor}>Yoka</span>
+        </span>
+        <span className={styles.footerVersion}>v{VERSION}</span>
+      </footer>
     </div>
   );
 }

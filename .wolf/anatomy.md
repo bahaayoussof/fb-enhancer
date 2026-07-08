@@ -1,6 +1,6 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-07-08T09:01:02.940Z
+> Auto-maintained by OpenWolf. Last scanned: 2026-07-08T10:47:53.377Z
 > Files: 88 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ./
@@ -29,11 +29,11 @@
 
 ## src/background/
 
-- `background.ts` (~261 tok)
+- `background.ts` — Declares updated (~411 tok)
 
 ## src/content/
 
-- `content.ts` — Feature registrations — side-effect imports trigger featureManager.register() (~273 tok)
+- `content.ts` — Feature registrations — side-effect imports trigger featureManager.register() (~244 tok)
 
 ## src/core/context/
 
@@ -42,7 +42,7 @@
 
 ## src/core/feature-manager/
 
-- `feature-manager.ts` — Exports featureManager (~418 tok)
+- `feature-manager.ts` — Exports featureManager (~598 tok)
 - `types.ts` — Exports IFeature (~95 tok)
 
 ## src/core/logger/
@@ -52,8 +52,8 @@
 
 ## src/core/messaging/
 
-- `messaging-service.ts` — Exports messagingService (~328 tok)
-- `types.ts` — Exports ToggleFeaturePayload, SettingsUpdatedPayload, ExtensionMessage (~119 tok)
+- `messaging-service.ts` — Exports messagingService (~387 tok)
+- `types.ts` — Exports ToggleFeaturePayload, SettingsUpdatedPayload, ToggleAllPayload, ExtensionMessage (~152 tok)
 
 ## src/core/observer/
 
@@ -62,7 +62,7 @@
 
 ## src/core/pipeline/
 
-- `extension-pipeline.ts` — Idle window before processing accumulated mutations. (~868 tok)
+- `extension-pipeline.ts` — Idle window before processing accumulated mutations. (~942 tok)
 
 ## src/core/scanner/
 
@@ -79,7 +79,7 @@
 
 - `actions.ts` — Exports hideFeedNoiseElement, showFeedNoiseElement (~148 tok)
 - `constants.ts` — Catch-all for feed elements not covered by other features (~167 tok)
-- `feature.ts` — Exports FeedCleanerFeature (~344 tok)
+- `feature.ts` — Exports FeedCleanerFeature (~354 tok)
 - `index.ts` (~50 tok)
 - `matcher.ts` — Exports isFeedNoiseElement (~101 tok)
 - `scanner.ts` — Exports findFeedNoiseElements (~266 tok)
@@ -88,7 +88,7 @@
 
 - `actions.ts` — Exports hideReelElement, showReelElement (~140 tok)
 - `constants.ts` — Exports REELS_SELECTORS (~60 tok)
-- `feature.ts` — Exports HideReelsFeature (~327 tok)
+- `feature.ts` — Exports HideReelsFeature (~338 tok)
 - `index.ts` (~48 tok)
 - `matcher.ts` — Exports isReelsElement (~100 tok)
 - `scanner.ts` — Exports findReelElements (~170 tok)
@@ -97,7 +97,7 @@
 
 - `actions.ts` — Exports hideSidebarElement, showSidebarElement (~72 tok)
 - `constants.ts` — Exports SIDEBAR_SELECTORS (~54 tok)
-- `feature.ts` — Exports HideSidebarFeature (~337 tok)
+- `feature.ts` — Exports HideSidebarFeature (~347 tok)
 - `index.ts` (~50 tok)
 - `matcher.ts` — Exports isSidebarElement (~100 tok)
 - `scanner.ts` — Exports findSidebarElements (~156 tok)
@@ -106,7 +106,7 @@
 
 - `actions.ts` — Exports hideSponsoredPost, showSponsoredPost (~190 tok)
 - `constants.ts` — Sponsored posts are identified by text content, aria attributes, and structural patterns. (~243 tok)
-- `feature.ts` — Exports HideSponsoredFeature (~336 tok)
+- `feature.ts` — Exports HideSponsoredFeature (~347 tok)
 - `index.ts` (~51 tok)
 - `matcher.ts` — Exports isSponsoredLabel (~122 tok)
 - `scanner.ts` — Exports findSponsoredElements (~406 tok)
@@ -115,7 +115,7 @@
 
 - `actions.ts` — Some story containers are nested — walk up to find the outermost wrapping div (~198 tok)
 - `constants.ts` — Ordered by stability: data-pagelet > aria > testid > structural (~266 tok)
-- `feature.ts` — Exports HideStoriesFeature (~333 tok)
+- `feature.ts` — Exports HideStoriesFeature (~343 tok)
 - `index.ts` (~50 tok)
 - `matcher.ts` — Exports isStoriesElement (~135 tok)
 - `scanner.ts` — Exports findStoryElements (~195 tok)
@@ -124,7 +124,7 @@
 
 - `actions.ts` — Exports hideSuggestedElement, showSuggestedElement (~149 tok)
 - `constants.ts` — Exports SUGGESTED_SELECTORS, SUGGESTED_TEXT_MARKERS (~147 tok)
-- `feature.ts` — Exports HideSuggestedFeature (~343 tok)
+- `feature.ts` — Exports HideSuggestedFeature (~353 tok)
 - `index.ts` (~51 tok)
 - `matcher.ts` — Exports isSuggestedElement (~101 tok)
 - `scanner.ts` — Exports findSuggestedElements (~288 tok)
@@ -159,18 +159,18 @@
 
 ## src/ui/popup/
 
-- `Popup.module.css` — Styles: 14 rules (~406 tok)
-- `Popup.tsx` — FEED_FEATURES (~1024 tok)
+- `Popup.module.css` — Styles: 19 rules, 25 vars (~1012 tok)
+- `Popup.tsx` — FEED_FEATURES (~908 tok)
 
 ## src/ui/popup/components/
 
-- `CategoryGroup.module.css` — Styles: 2 rules (~57 tok)
-- `CategoryGroup.tsx` — CategoryGroup (~261 tok)
-- `FeatureToggle.module.css` — Styles: 12 rules (~342 tok)
-- `FeatureToggle.tsx` — FeatureToggle (~237 tok)
-- `SearchBar.module.css` — Styles: 3 rules (~88 tok)
-- `SearchBar.tsx` — SearchBar (~121 tok)
+- `CategoryGroup.module.css` — Styles: 3 rules (~100 tok)
+- `CategoryGroup.tsx` — CategoryGroup (~281 tok)
+- `FeatureToggle.module.css` — Styles: 10 rules (~659 tok)
+- `FeatureToggle.tsx` — FeatureToggle (~225 tok)
+- `SearchBar.module.css` — Styles: 5 rules (~180 tok)
+- `SearchBar.tsx` — SearchBar (~151 tok)
 
 ## src/ui/popup/hooks/
 
-- `useFeatureSettings.ts` — Exports useFeatureSettings (~465 tok)
+- `useFeatureSettings.ts` — Exports useFeatureSettings (~550 tok)

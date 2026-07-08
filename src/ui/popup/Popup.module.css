@@ -1,30 +1,28 @@
 /* ── CSS custom properties — light mode (iOS system colors) ── */
 .popup {
   /* surfaces */
-  --clr-bg-page:    #f2f2f7;
-  --clr-bg-card:    #ffffff;
-  --clr-bg-header:  #ffffff;
+  --clr-bg-page: #f2f2f7;
+  --clr-bg-card: #ffffff;
+  --clr-bg-header: #ffffff;
 
   /* text */
-  --clr-text-primary:   #000000;
+  --clr-text-primary: #000000;
   --clr-text-secondary: rgba(60, 60, 67, 0.6);
 
   /* chrome */
-  --clr-separator:  rgba(60, 60, 67, 0.18);
-  --clr-footer:     rgba(60, 60, 67, 0.4);
-  --clr-accent:     #007aff;
+  --clr-separator: rgba(60, 60, 67, 0.18);
+  --clr-footer: rgba(60, 60, 67, 0.4);
+  --clr-accent: #007aff;
 
   /* toggle */
-  --clr-toggle-on:  #30d158;
+  --clr-toggle-on: #30d158;
   --clr-toggle-off: #e5e5ea;
 
   /* shadows */
-  --shadow-card:   0 0.5px 0 rgba(0, 0, 0, 0.06);
-  --shadow-track:  inset 0 0 0 0.5px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-card: 0 0.5px 0 rgba(0, 0, 0, 0.06);
+  --shadow-track: inset 0 0 0 0.5px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
   --shadow-thumb:
-    0 3px 8px rgba(0, 0, 0, 0.18),
-    0 1px 3px rgba(0, 0, 0, 0.12),
-    0 0 0 0.5px rgba(0, 0, 0, 0.04);
+    0 3px 8px rgba(0, 0, 0, 0.18), 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 0 0.5px rgba(0, 0, 0, 0.04);
 
   width: 340px;
   background: var(--clr-bg-page);
@@ -35,24 +33,23 @@
 /* ── Dark mode overrides ───────────────────────────────────── */
 @media (prefers-color-scheme: dark) {
   .popup {
-    --clr-bg-page:    #000000;
-    --clr-bg-card:    #1c1c1e;
-    --clr-bg-header:  #1c1c1e;
+    --clr-bg-page: #000000;
+    --clr-bg-card: #1c1c1e;
+    --clr-bg-header: #1c1c1e;
 
-    --clr-text-primary:   #ffffff;
+    --clr-text-primary: #ffffff;
     --clr-text-secondary: rgba(235, 235, 245, 0.6);
 
-    --clr-separator:  rgba(84, 84, 88, 0.65);
-    --clr-footer:     rgba(235, 235, 245, 0.3);
-    --clr-accent:     #0a84ff;
+    --clr-separator: rgba(84, 84, 88, 0.65);
+    --clr-footer: rgba(235, 235, 245, 0.3);
+    --clr-accent: #0a84ff;
 
     --clr-toggle-off: #38383a;
 
-    --shadow-card:   none;
-    --shadow-track:  inset 0 0 0 0.5px rgba(255, 255, 255, 0.06), 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-card: none;
+    --shadow-track: inset 0 0 0 0.5px rgba(255, 255, 255, 0.06), 0 1px 2px rgba(0, 0, 0, 0.4);
     --shadow-thumb:
-      0 3px 10px rgba(0, 0, 0, 0.45),
-      0 1px 4px rgba(0, 0, 0, 0.3),
+      0 3px 10px rgba(0, 0, 0, 0.45), 0 1px 4px rgba(0, 0, 0, 0.3),
       0 0 0 0.5px rgba(255, 255, 255, 0.08);
   }
 }
@@ -60,7 +57,7 @@
 /* ── Header ────────────────────────────────────────────────── */
 .header {
   background: var(--clr-bg-header);
-  padding: 14px 16px 12px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -111,8 +108,8 @@
   font-weight: 600;
   color: #fff;
   background: var(--clr-toggle-on);
-  padding: 2px 8px;
-  border-radius: 20px;
+  padding: 2px 16px;
+  border-radius: 5px;
   white-space: nowrap;
 }
 
@@ -151,8 +148,28 @@
 
 /* ── Footer ────────────────────────────────────────────────── */
 .footer {
-  padding: 8px 16px 12px;
+  padding: 10px 16px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   font-size: 11px;
+  letter-spacing: 0.2px;
   color: var(--clr-footer);
-  text-align: center;
+  border-top: 0.5px solid var(--clr-separator);
+}
+
+.footerAuthor {
+  font-weight: 600;
+  color: var(--clr-text-secondary);
+}
+
+.footerVersion {
+  color: var(--clr-footer);
+}
+
+.footerVersion::before {
+  content: '·';
+  font-weight: 800;
+  margin-right: 6px;
 }

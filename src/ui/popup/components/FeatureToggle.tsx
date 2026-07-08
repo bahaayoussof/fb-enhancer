@@ -20,7 +20,7 @@ export function FeatureToggle({ id, label, description, enabled, onToggle }: Fea
         role="switch"
         aria-checked={enabled}
         aria-label={`Toggle ${label}`}
-        className={`${styles.toggle} ${enabled ? styles.on : styles.off}`}
+        className={styles.toggle}
         onClick={() => onToggle(id, !enabled)}
       />
     </div>
