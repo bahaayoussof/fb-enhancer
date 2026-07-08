@@ -39,9 +39,17 @@ export function useFeatureSettings(): UseFeatureSettingsResult {
   const toggleAll = useCallback(
     (enabled: boolean) => {
       const ids = Object.keys(settings) as FeatureId[];
-      ids.forEach((id) => toggle(id, enabled));
+      const allUpdated = Object.fromEntries(ids.map((id) => [id, enabled])) as FeatureSettings;
+      setSettings(allUpdated);
+
+      messagingService
+        .sendToBackground({ type: 'TOGGLE_ALL', payload: { enabled } })
+        .catch((err) => {
+          logger.error('Failed to toggle all features', err);
+          setSettings(settings);
+        });
     },
-    [settings, toggle]
+    [settings]
   );
 
   return { settings, loading, toggle, toggleAll };

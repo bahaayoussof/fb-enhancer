@@ -12,6 +12,22 @@ messagingService.onMessage((message: ExtensionMessage): Promise<unknown> | void 
     return storageService.loadSettings();
   }
 
+  if (message.type === 'TOGGLE_ALL') {
+    return storageService
+      .loadSettings()
+      .then((current) => {
+        const updated = Object.fromEntries(
+          Object.keys(current).map((k) => [k, message.payload.enabled])
+        ) as typeof current;
+        return storageService.saveSettings(updated).then(() => updated);
+      })
+      .then((updated) => {
+        messagingService.sendToActiveTab({ type: 'SETTINGS_UPDATED', payload: { settings: updated } });
+        return updated;
+      })
+      .catch((err) => logger.error('Failed to toggle all features', err));
+  }
+
   if (message.type === 'TOGGLE_FEATURE') {
     return storageService
       .updateFeature(message.payload.featureId, message.payload.enabled)
