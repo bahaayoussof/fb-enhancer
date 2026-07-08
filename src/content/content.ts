@@ -6,6 +6,11 @@ import type { ExtensionMessage } from '@core/messaging/types';
 
 // Feature registrations — side-effect imports trigger featureManager.register()
 import '@features/hide-stories';
+import '@features/hide-reels';
+import '@features/hide-sponsored';
+import '@features/hide-suggested';
+import '@features/hide-sidebar';
+import '@features/feed-cleaner';
 
 logger.info('content ready');
 
