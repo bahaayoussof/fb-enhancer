@@ -3,11 +3,10 @@
   align-items: center;
   padding: 11px 16px;
   gap: 12px;
-  background: #fff;
+  background: var(--clr-bg-card);
   position: relative;
 }
 
-/* hairline divider — not on last child */
 .row:not(:last-child)::after {
   content: '';
   position: absolute;
@@ -15,7 +14,7 @@
   left: 16px;
   right: 0;
   height: 0.5px;
-  background: rgba(60, 60, 67, 0.18);
+  background: var(--clr-separator);
 }
 
 .text {
@@ -29,7 +28,7 @@
 .label {
   font-size: 14px;
   font-weight: 500;
-  color: #000;
+  color: var(--clr-text-primary);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -37,7 +36,7 @@
 
 .description {
   font-size: 12px;
-  color: rgba(60, 60, 67, 0.6);
+  color: var(--clr-text-secondary);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -45,6 +44,8 @@
 
 /* ── iOS 2026 Toggle ─────────────────────────── */
 .toggle {
+  appearance: none;
+  -webkit-appearance: none;
   flex-shrink: 0;
   width: 51px;
   height: 31px;
@@ -54,21 +55,15 @@
   position: relative;
   padding: 0;
   outline: none;
-  /* track depth: inset rim + subtle bottom shadow */
-  box-shadow:
-    inset 0 0 0 0.5px rgba(0, 0, 0, 0.08),
-    0 1px 2px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow-track);
   transition: background-color 0.3s ease;
   -webkit-tap-highlight-color: transparent;
 }
 
 .toggle:focus-visible {
-  box-shadow:
-    inset 0 0 0 0.5px rgba(0, 0, 0, 0.08),
-    0 0 0 4px rgba(0, 122, 255, 0.32);
+  box-shadow: var(--shadow-track), 0 0 0 4px rgba(0, 122, 255, 0.32);
 }
 
-/* thumb — white circle, multi-layer elevation */
 .toggle::after {
   content: '';
   position: absolute;
@@ -78,39 +73,32 @@
   height: 27px;
   border-radius: 50%;
   background: #ffffff;
-  box-shadow:
-    0 3px 8px rgba(0, 0, 0, 0.18),
-    0 1px 3px rgba(0, 0, 0, 0.12),
-    0 0 0 0.5px rgba(0, 0, 0, 0.04);
-  /* spring overshoot on translate, quick width change on press */
+  box-shadow: var(--shadow-thumb);
   transition:
     transform 0.36s cubic-bezier(0.34, 1.56, 0.64, 1),
     width 0.12s ease,
     border-radius 0.12s ease;
 }
 
-/* press — thumb stretches toward direction of travel */
 .toggle:active::after {
   width: 33px;
   border-radius: 14px;
 }
 
 .on {
-  background-color: #30d158;
+  background-color: var(--clr-toggle-on);
 }
 
-/* track 51px, thumb 27px, 2px gap each side → travel 20px */
 .on::after {
   transform: translateX(20px);
 }
 
-/* when ON and pressing, stretched thumb stays flush with right edge */
 .on:active::after {
-  transform: translateX(14px); /* 51 - 33 - 2 - 2 = 14px */
+  transform: translateX(14px);
 }
 
 .off {
-  background-color: #e5e5ea;
+  background-color: var(--clr-toggle-off);
 }
 
 .off::after {

@@ -5,7 +5,7 @@
 .title {
   font-size: 12px;
   font-weight: 600;
-  color: rgba(60, 60, 67, 0.6);
+  color: var(--clr-text-secondary);
   text-transform: uppercase;
   letter-spacing: 0.4px;
   margin: 0;
@@ -13,9 +13,9 @@
 }
 
 .card {
-  background: #fff;
+  background: var(--clr-bg-card);
   border-radius: 10px;
   margin: 0 16px;
   overflow: hidden;
-  box-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow-card);
 }
