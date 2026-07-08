@@ -44,63 +44,64 @@
 
 /* ── iOS 2026 Toggle ─────────────────────────── */
 .toggle {
-  appearance: none;
-  -webkit-appearance: none;
-  flex-shrink: 0;
-  width: 51px;
-  height: 31px;
-  border-radius: 16px;
+  width: 64px;
+  height: 28px;
+  border-radius: 15px;
+  padding: 2px;
+  margin: 0;
   border: none;
+  background-color: rgba(120, 120, 120, 0.2);
+
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  user-select: none;
+
+  flex-shrink: 0;
+  grid-template-columns: 0fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  place-content: center;
+  transition: color 0.3s, grid-template-columns 0.2s;
+  display: inline-grid;
   position: relative;
-  padding: 0;
-  outline: none;
-  box-shadow: var(--shadow-track);
-  transition: background-color 0.3s ease;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .toggle:focus-visible {
-  box-shadow: var(--shadow-track), 0 0 0 4px rgba(0, 122, 255, 0.32);
+  box-shadow: 0 0 0 4px rgba(0, 122, 255, 0.32);
 }
 
-.toggle::after {
+.toggle:before {
   content: '';
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 27px;
-  height: 27px;
-  border-radius: 50%;
-  background: #ffffff;
-  box-shadow: var(--shadow-thumb);
+  border-radius: 13px;
+  background-color: rgba(255, 255, 255, 1);
+  grid-row-start: 1;
+  grid-column-start: 2;
   transition:
-    transform 0.36s cubic-bezier(0.34, 1.56, 0.64, 1),
-    width 0.12s ease,
-    border-radius 0.12s ease;
+    background-color 0.1s cubic-bezier(0.175, 0.885, 0.32, 2.2),
+    translate 0.2s cubic-bezier(0.175, 0.885, 0.32, 2.2),
+    inset-inline-start 0.2s cubic-bezier(0.175, 0.885, 0.32, 2.2),
+    transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+  position: relative;
+  inset-inline-start: 0;
+  translate: 0;
 }
 
-.toggle:active::after {
-  width: 33px;
-  border-radius: 14px;
+.toggle:active:before {
+  transform: scale(1.35);
+  box-shadow:
+    0 0.5px 4px 0 rgba(0, 0, 0, 0.12),
+    0 6px 13px 0 rgba(0, 0, 0, 0.12),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.8),
+    inset 0 0 5px rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
 }
 
-.on {
-  background-color: var(--clr-toggle-on);
-}
-
-.on::after {
-  transform: translateX(20px);
-}
-
-.on:active::after {
-  transform: translateX(14px);
-}
-
-.off {
-  background-color: var(--clr-toggle-off);
-}
-
-.off::after {
-  transform: translateX(0);
+.toggle[aria-checked='true'] {
+  background-color: rgba(52, 199, 89, 1);
+  grid-template-columns: 1fr 2fr 0fr;
 }
