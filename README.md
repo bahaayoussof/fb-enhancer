@@ -1,6 +1,6 @@
 # <img src="public/images/logo.png" width="38" height="38" valign="middle"> FB Enhancer
 
-![FB Enhancer popup screenshot](image.png)
+![FB Enhancer popup screenshot](public/images/extension-popup.png)
 
 ### Visual Comparison
 
