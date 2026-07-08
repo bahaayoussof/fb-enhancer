@@ -115,3 +115,13 @@
 | 11:50 | Edited src/core/pipeline/extension-pipeline.ts | added 1 condition(s) | ~164 |
 | 11:51 | Edited src/features/hide-stories/constants.ts | expanded (+6 lines) | ~266 |
 | 11:53 | Session end: 98 writes across 45 files (PLAN.md, package.json, tsconfig.json, .prettierrc, manifest.json) | 6 reads | ~22811 tok |
+| 11:56 | Edited src/ui/popup/hooks/useFeatureSettings.ts | modified useFeatureSettings() | ~379 |
+| 11:57 | Edited src/ui/popup/Popup.tsx | CSS: true | ~1024 |
+| 11:57 | Edited src/ui/popup/Popup.module.css | expanded (+48 lines) | ~282 |
+| 11:57 | Edited src/ui/popup/components/FeatureToggle.module.css | CSS: outline, toggle, box-shadow | ~83 |
+| 11:58 | Edited manifest.json | expanded (+12 lines) | ~306 |
+| 11:58 | Edited package.json | 0.1 → 1.0 | ~6 |
+| 11:58 | Edited package.json | 4→5 lines | ~70 |
+| 11:59 | Session end: 105 writes across 45 files (PLAN.md, package.json, tsconfig.json, .prettierrc, manifest.json) | 12 reads | ~27071 tok |
+| 12:01 | Edited manifest.json | inline fix | ~3 |
+| 12:02 | Session end: 106 writes across 45 files (PLAN.md, package.json, tsconfig.json, .prettierrc, manifest.json) | 12 reads | ~27074 tok |

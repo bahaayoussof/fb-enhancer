@@ -144,6 +144,86 @@
       "related_bugs": [],
       "occurrences": 1,
       "last_seen": "2026-07-08T08:51:03.351Z"
+    },
+    {
+      "id": "bug-010",
+      "timestamp": "2026-07-08T08:57:02.847Z",
+      "error_message": "Significant refactor of ",
+      "file": "src/ui/popup/Popup.tsx",
+      "root_cause": "3 lines replaced/restructured",
+      "fix": "Rewrote 69→94 lines (3 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "tsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-07-08T08:57:02.847Z"
+    },
+    {
+      "id": "bug-011",
+      "timestamp": "2026-07-08T08:57:12.560Z",
+      "error_message": "Significant refactor of ",
+      "file": "src/ui/popup/Popup.module.css",
+      "root_cause": "2 lines replaced/restructured",
+      "fix": "Rewrote 22→70 lines (2 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "css"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-07-08T08:57:12.560Z"
+    },
+    {
+      "id": "bug-012",
+      "timestamp": "2026-07-08T08:57:18.961Z",
+      "error_message": "CSS fix: transition",
+      "file": "src/ui/popup/components/FeatureToggle.module.css",
+      "root_cause": "transition: background-color 0.2s ease → background-color 0.18s ease",
+      "fix": "Changed transition: background-color 0.2s ease → background-color 0.18s ease",
+      "tags": [
+        "auto-detected",
+        "style-fix",
+        "css"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-07-08T08:57:18.961Z"
+    },
+    {
+      "id": "bug-013",
+      "timestamp": "2026-07-08T08:58:19.425Z",
+      "error_message": "Significant refactor of ",
+      "file": "manifest.json",
+      "root_cause": "3 lines replaced/restructured",
+      "fix": "Rewrote 26→38 lines (3 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "json"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-07-08T08:58:19.425Z"
+    },
+    {
+      "id": "bug-014",
+      "timestamp": "2026-07-08T08:58:30.437Z",
+      "error_message": "Incorrect value in code",
+      "file": "package.json",
+      "root_cause": "Had \"0.1.0\"",
+      "fix": "Changed to \"1.0.0\"",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "json"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-07-08T08:58:30.437Z"
     }
   ]
 }

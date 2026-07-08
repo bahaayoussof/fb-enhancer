@@ -1,6 +1,6 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-07-08T08:51:03.330Z
+> Auto-maintained by OpenWolf. Last scanned: 2026-07-08T09:01:02.940Z
 > Files: 88 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ./
@@ -8,8 +8,8 @@
 - `.eslintrc.cjs` — ESLint 8 config: TS + React + Hooks + Prettier rules (~207 tok)
 - `.prettierrc` — Prettier: singleQuote, semi, tabWidth 2, printWidth 100 (~36 tok)
 - `CLAUDE.md` — OpenWolf entry point (~57 tok)
-- `manifest.json` — MV3 manifest: storage+activeTab perms, content script on facebook.com (~196 tok)
-- `package.json` — React 18, Vite 5, TS 5, vite-plugin-web-extension, ESLint 8 (~238 tok)
+- `manifest.json` (~290 tok)
+- `package.json` — Node.js package manifest (~273 tok)
 - `tsconfig.json` — strict, bundler moduleResolution, paths aliases @/@core/@features/@shared/@ui (~200 tok)
 - `vite.config.ts` — vite-plugin-web-extension + @vitejs/plugin-react + path aliases (~203 tok)
 
@@ -159,18 +159,18 @@
 
 ## src/ui/popup/
 
-- `Popup.module.css` — Styles: 7 rules (~216 tok)
-- `Popup.tsx` — FEED_FEATURES (~750 tok)
+- `Popup.module.css` — Styles: 14 rules (~406 tok)
+- `Popup.tsx` — FEED_FEATURES (~1024 tok)
 
 ## src/ui/popup/components/
 
 - `CategoryGroup.module.css` — Styles: 2 rules (~57 tok)
 - `CategoryGroup.tsx` — CategoryGroup (~261 tok)
-- `FeatureToggle.module.css` — Styles: 11 rules (~316 tok)
+- `FeatureToggle.module.css` — Styles: 12 rules (~342 tok)
 - `FeatureToggle.tsx` — FeatureToggle (~237 tok)
 - `SearchBar.module.css` — Styles: 3 rules (~88 tok)
 - `SearchBar.tsx` — SearchBar (~121 tok)
 
 ## src/ui/popup/hooks/
 
-- `useFeatureSettings.ts` — Exports useFeatureSettings (~394 tok)
+- `useFeatureSettings.ts` — Exports useFeatureSettings (~465 tok)
