@@ -21,9 +21,10 @@ const LAYOUT_FEATURES: FeatureMeta[] = [
 ];
 
 const ALL_FEATURES: FeatureMeta[] = [...FEED_FEATURES, ...MEDIA_FEATURES, ...LAYOUT_FEATURES];
+const VERSION = chrome.runtime.getManifest().version;
 
 export function Popup() {
-  const { settings, loading, toggle } = useFeatureSettings();
+  const { settings, loading, toggle, toggleAll } = useFeatureSettings();
   const [query, setQuery] = useState('');
 
   const filtered = useMemo(() => {
@@ -35,13 +36,26 @@ export function Popup() {
   }, [query]);
 
   const enabledCount = ALL_FEATURES.filter((f) => settings[f.id]).length;
+  const allEnabled = enabledCount === ALL_FEATURES.length;
+  const allDisabled = enabledCount === 0;
 
   return (
     <div className={styles.popup}>
       <header className={styles.header}>
         <div className={styles.titleRow}>
           <h1 className={styles.title}>FB Enhancer</h1>
-          <span className={styles.badge}>{enabledCount}/{ALL_FEATURES.length}</span>
+          <div className={styles.headerActions}>
+            <span className={styles.badge}>
+              {enabledCount}/{ALL_FEATURES.length} active
+            </span>
+            <button
+              className={styles.toggleAllBtn}
+              onClick={() => toggleAll(allDisabled ? true : false)}
+              title={allEnabled ? 'Disable all' : 'Enable all'}
+            >
+              {allDisabled ? 'Enable all' : 'Disable all'}
+            </button>
+          </div>
         </div>
         <SearchBar value={query} onChange={setQuery} />
       </header>
@@ -50,12 +64,19 @@ export function Popup() {
         {loading ? (
           <p className={styles.loading}>Loading…</p>
         ) : filtered !== null ? (
-          <CategoryGroup
-            title="Results"
-            features={filtered}
-            settings={settings}
-            onToggle={toggle}
-          />
+          filtered.length === 0 ? (
+            <div className={styles.emptyState}>
+              <p className={styles.emptyTitle}>No results</p>
+              <p className={styles.emptyHint}>Try a different search term</p>
+            </div>
+          ) : (
+            <CategoryGroup
+              title={`Results (${filtered.length})`}
+              features={filtered}
+              settings={settings}
+              onToggle={toggle}
+            />
+          )
         ) : (
           <>
             <CategoryGroup title="Feed" features={FEED_FEATURES} settings={settings} onToggle={toggle} />
@@ -64,6 +85,10 @@ export function Popup() {
           </>
         )}
       </main>
+
+      <footer className={styles.footer}>
+        <span>v{VERSION}</span>
+      </footer>
     </div>
   );
 }

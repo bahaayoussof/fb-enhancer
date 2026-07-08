@@ -44,8 +44,13 @@
   border: none;
   cursor: pointer;
   position: relative;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.18s ease;
   padding: 0;
+  outline: none;
+}
+
+.toggle:focus-visible {
+  box-shadow: 0 0 0 3px rgba(24, 119, 242, 0.3);
 }
 
 .toggle::after {

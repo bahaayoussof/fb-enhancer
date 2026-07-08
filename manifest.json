@@ -1,12 +1,24 @@
 {
   "manifest_version": 3,
   "name": "FB Enhancer",
-  "version": "0.1.0",
-  "description": "Remove unwanted Facebook content: sponsored posts, stories, reels, and more.",
+  "version": "1.0.0",
+  "description": "Clean up your Facebook feed — hide sponsored posts, stories, reels, suggested content, and the right sidebar.",
   "permissions": ["storage", "activeTab"],
   "action": {
     "default_popup": "src/popup/index.html",
-    "default_title": "FB Enhancer"
+    "default_title": "FB Enhancer",
+    "default_icon": {
+      "16": "public/icons/icon16.png",
+      "32": "public/icons/icon32.png",
+      "48": "public/icons/icon48.png",
+      "128": "public/icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "public/icons/icon16.png",
+    "32": "public/icons/icon32.png",
+    "48": "public/icons/icon48.png",
+    "128": "public/icons/icon128.png"
   },
   "options_ui": {
     "page": "src/options/index.html",

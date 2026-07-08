@@ -1,11 +1,12 @@
 {
   "name": "fb-enhancer",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "package": "npm run build && powershell Compress-Archive -Force -Path dist/* -DestinationPath fb-enhancer-v1.0.0.zip",
     "lint": "eslint . --ext .ts,.tsx",
     "format": "prettier --write ."
   },

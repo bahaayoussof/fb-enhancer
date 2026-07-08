@@ -8,6 +8,7 @@ interface UseFeatureSettingsResult {
   settings: FeatureSettings;
   loading: boolean;
   toggle(id: FeatureId, enabled: boolean): void;
+  toggleAll(enabled: boolean): void;
 }
 
 export function useFeatureSettings(): UseFeatureSettingsResult {
@@ -35,5 +36,13 @@ export function useFeatureSettings(): UseFeatureSettingsResult {
       });
   }, []);
 
-  return { settings, loading, toggle };
+  const toggleAll = useCallback(
+    (enabled: boolean) => {
+      const ids = Object.keys(settings) as FeatureId[];
+      ids.forEach((id) => toggle(id, enabled));
+    },
+    [settings, toggle]
+  );
+
+  return { settings, loading, toggle, toggleAll };
 }
