@@ -61,7 +61,7 @@
   box-shadow: 0 0 0 4px rgba(0, 122, 255, 0.35);
 }
 
-/* thumb */
+/* thumb — 27px circle, 2px gap from track edge */
 .toggle::after {
   content: '';
   position: absolute;
@@ -81,6 +81,7 @@
   background-color: #30d158;
 }
 
+/* track: 51px, thumb: 27px, gap: 2px each side → travel = 51-27-2-2 = 20px */
 .on::after {
   transform: translateX(20px);
 }
