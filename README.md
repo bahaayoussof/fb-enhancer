@@ -1,5 +1,7 @@
 # <img src="public/images/logo.png" width="38" height="38" valign="middle"> FB Enhancer
 
+![alt text](image.png)
+
 A lightweight, modern, and highly configurable browser extension to clean up your Facebook feed and layout. Take back control of your social media experience by removing clutter, intrusive ads, algorithmic suggestions, and unused sidebar features.
 
 ---

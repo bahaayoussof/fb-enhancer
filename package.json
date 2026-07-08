@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "package": "npm run build && powershell Compress-Archive -Force -Path dist/* -DestinationPath fb-enhancer-v1.0.0.zip",
+    "package": "npm run build && powershell -ExecutionPolicy Bypass -File bin/zip.ps1",
     "lint": "eslint . --ext .ts,.tsx",
     "format": "prettier --write ."
   },
