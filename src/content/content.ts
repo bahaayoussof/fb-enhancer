@@ -17,7 +17,7 @@ messagingService.onMessage((message: ExtensionMessage) => {
   logger.debug('Content received message', message);
 
   if (message.type === 'SETTINGS_UPDATED') {
-    extensionPipeline.refresh(message.payload.settings);
+    window.location.reload();
   }
 });
 
