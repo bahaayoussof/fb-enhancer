@@ -11,6 +11,26 @@
       "count": 1,
       "tokens": 196,
       "first_read": "2026-07-08T07:12:51.942Z"
+    },
+    "D:/Private/fb-enhancer/src/core/scanner/dom-scanner.ts": {
+      "count": 1,
+      "tokens": 105,
+      "first_read": "2026-07-08T08:45:50.956Z"
+    },
+    "D:/Private/fb-enhancer/src/core/pipeline/extension-pipeline.ts": {
+      "count": 2,
+      "tokens": 774,
+      "first_read": "2026-07-08T08:45:51.318Z"
+    },
+    "D:/Private/fb-enhancer/src/core/observer/observer-manager.ts": {
+      "count": 1,
+      "tokens": 218,
+      "first_read": "2026-07-08T08:45:51.913Z"
+    },
+    "D:/Private/fb-enhancer/src/features/hide-stories/constants.ts": {
+      "count": 1,
+      "tokens": 108,
+      "first_read": "2026-07-08T08:50:54.617Z"
     }
   },
   "files_written": [
@@ -571,6 +591,36 @@
       "action": "edit",
       "tokens": 80,
       "at": "2026-07-08T08:37:47.552Z"
+    },
+    {
+      "file": "D:/Private/fb-enhancer/src/core/scanner/dom-scanner.ts",
+      "action": "edit",
+      "tokens": 205,
+      "at": "2026-07-08T08:45:59.997Z"
+    },
+    {
+      "file": "D:/Private/fb-enhancer/src/core/pipeline/extension-pipeline.ts",
+      "action": "edit",
+      "tokens": 757,
+      "at": "2026-07-08T08:46:16.289Z"
+    },
+    {
+      "file": "D:/Private/fb-enhancer/src/shared/dom/selector-engine.ts",
+      "action": "create",
+      "tokens": 292,
+      "at": "2026-07-08T08:50:33.710Z"
+    },
+    {
+      "file": "D:/Private/fb-enhancer/src/core/pipeline/extension-pipeline.ts",
+      "action": "edit",
+      "tokens": 164,
+      "at": "2026-07-08T08:50:47.483Z"
+    },
+    {
+      "file": "D:/Private/fb-enhancer/src/features/hide-stories/constants.ts",
+      "action": "edit",
+      "tokens": 266,
+      "at": "2026-07-08T08:51:03.345Z"
     }
   ],
   "edit_counts": {
@@ -597,10 +647,10 @@
     "src/core/observer/types.ts": 1,
     "src/core/feature-manager/types.ts": 1,
     "src/core/context/context-builder.ts": 1,
-    "src/core/scanner/dom-scanner.ts": 1,
+    "src/core/scanner/dom-scanner.ts": 2,
     "src/core/observer/observer-manager.ts": 1,
     "src/core/feature-manager/feature-manager.ts": 1,
-    "src/core/pipeline/extension-pipeline.ts": 2,
+    "src/core/pipeline/extension-pipeline.ts": 4,
     "src/core/storage/types.ts": 1,
     "src/core/storage/defaults.ts": 1,
     "src/core/storage/storage-service.ts": 1,
@@ -620,7 +670,7 @@
     "src/shared/utils/retry.ts": 1,
     "src/shared/utils/debounce.ts": 1,
     "src/shared/utils/is-facebook.ts": 1,
-    "src/features/hide-stories/constants.ts": 1,
+    "src/features/hide-stories/constants.ts": 2,
     "src/features/hide-stories/scanner.ts": 1,
     "src/features/hide-stories/matcher.ts": 1,
     "src/features/hide-stories/actions.ts": 1,
@@ -655,11 +705,12 @@
     "src/features/feed-cleaner/matcher.ts": 1,
     "src/features/feed-cleaner/actions.ts": 1,
     "src/features/feed-cleaner/feature.ts": 1,
-    "src/features/feed-cleaner/index.ts": 1
+    "src/features/feed-cleaner/index.ts": 1,
+    "src/shared/dom/selector-engine.ts": 1
   },
-  "anatomy_hits": 1,
+  "anatomy_hits": 5,
   "anatomy_misses": 1,
-  "repeated_reads_warned": 0,
+  "repeated_reads_warned": 1,
   "cerebrum_warnings": 0,
-  "stop_count": 7
+  "stop_count": 8
 }

@@ -109,3 +109,9 @@
 | 11:37 | Created src/features/feed-cleaner/index.ts | — | ~50 |
 | 11:37 | Edited src/content/content.ts | added 5 import(s) | ~80 |
 | 11:40 | Session end: 93 writes across 44 files (PLAN.md, package.json, tsconfig.json, .prettierrc, manifest.json) | 2 reads | ~19922 tok |
+| 11:45 | Edited src/core/scanner/dom-scanner.ts | added 3 condition(s) | ~205 |
+| 11:46 | Edited src/core/pipeline/extension-pipeline.ts | added 5 condition(s) | ~757 |
+| 11:50 | Created src/shared/dom/selector-engine.ts | — | ~292 |
+| 11:50 | Edited src/core/pipeline/extension-pipeline.ts | added 1 condition(s) | ~164 |
+| 11:51 | Edited src/features/hide-stories/constants.ts | expanded (+6 lines) | ~266 |
+| 11:53 | Session end: 98 writes across 45 files (PLAN.md, package.json, tsconfig.json, .prettierrc, manifest.json) | 6 reads | ~22811 tok |

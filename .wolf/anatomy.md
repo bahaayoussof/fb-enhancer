@@ -1,7 +1,7 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-07-08T08:37:47.538Z
-> Files: 87 tracked | Anatomy hits: 0 | Misses: 0
+> Auto-maintained by OpenWolf. Last scanned: 2026-07-08T08:51:03.330Z
+> Files: 88 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ./
 
@@ -62,11 +62,11 @@
 
 ## src/core/pipeline/
 
-- `extension-pipeline.ts` — Exports extensionPipeline (~451 tok)
+- `extension-pipeline.ts` — Idle window before processing accumulated mutations. (~868 tok)
 
 ## src/core/scanner/
 
-- `dom-scanner.ts` — Exports domScanner (~105 tok)
+- `dom-scanner.ts` — Exports domScanner (~205 tok)
 - `types.ts` — Exports ScanResult (~36 tok)
 
 ## src/core/storage/
@@ -114,7 +114,7 @@
 ## src/features/hide-stories/
 
 - `actions.ts` — Some story containers are nested — walk up to find the outermost wrapping div (~198 tok)
-- `constants.ts` — Ordered by stability: ARIA/data attrs first, class-based last (~108 tok)
+- `constants.ts` — Ordered by stability: data-pagelet > aria > testid > structural (~266 tok)
 - `feature.ts` — Exports HideStoriesFeature (~333 tok)
 - `index.ts` (~50 tok)
 - `matcher.ts` — Exports isStoriesElement (~135 tok)
@@ -144,6 +144,7 @@
 - `parent-finder.ts` — Exports findAncestor, findAncestorBySelector (~156 tok)
 - `safe-hide.ts` — Exports safeHide, safeShow (~107 tok)
 - `safe-remove.ts` — Exports safeRemove (~40 tok)
+- `selector-engine.ts` — Exports SelectorStrategy, SelectorEntry, SelectorEngine (~292 tok)
 - `selector-helpers.ts` — Exports queryFirst, queryAll, hasText, hasAriaLabel (~290 tok)
 
 ## src/shared/types/
