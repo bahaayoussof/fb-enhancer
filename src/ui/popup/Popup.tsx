@@ -22,6 +22,7 @@ const LAYOUT_FEATURES: FeatureMeta[] = [
 
 const ALL_FEATURES: FeatureMeta[] = [...FEED_FEATURES, ...MEDIA_FEATURES, ...LAYOUT_FEATURES];
 const VERSION = chrome.runtime.getManifest().version;
+const LOGO = chrome.runtime.getURL('images/logo.png');
 
 export function Popup() {
   const { settings, loading, toggle, toggleAll } = useFeatureSettings();
@@ -36,22 +37,24 @@ export function Popup() {
   }, [query]);
 
   const enabledCount = ALL_FEATURES.filter((f) => settings[f.id]).length;
-  const allEnabled = enabledCount === ALL_FEATURES.length;
   const allDisabled = enabledCount === 0;
 
   return (
     <div className={styles.popup}>
       <header className={styles.header}>
         <div className={styles.titleRow}>
-          <h1 className={styles.title}>FB Enhancer</h1>
+          <img src={LOGO} className={styles.logo} alt="" />
+          <div className={styles.titleMeta}>
+            <h1 className={styles.title}>FB Enhancer</h1>
+            <span className={styles.subtitle}>Facebook Feed Cleaner</span>
+          </div>
           <div className={styles.headerActions}>
-            <span className={styles.badge}>
-              {enabledCount}/{ALL_FEATURES.length} active
+            <span className={`${styles.badge} ${enabledCount === 0 ? styles.badgeZero : ''}`}>
+              {enabledCount}/{ALL_FEATURES.length}
             </span>
             <button
               className={styles.toggleAllBtn}
               onClick={() => toggleAll(allDisabled ? true : false)}
-              title={allEnabled ? 'Disable all' : 'Enable all'}
             >
               {allDisabled ? 'Enable all' : 'Disable all'}
             </button>
@@ -86,9 +89,7 @@ export function Popup() {
         )}
       </main>
 
-      <footer className={styles.footer}>
-        <span>v{VERSION}</span>
-      </footer>
+      <footer className={styles.footer}>v{VERSION}</footer>
     </div>
   );
 }

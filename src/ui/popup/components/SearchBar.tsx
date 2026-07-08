@@ -7,13 +7,16 @@ interface SearchBarProps {
 
 export function SearchBar({ value, onChange }: SearchBarProps) {
   return (
-    <input
-      className={styles.input}
-      type="search"
-      placeholder="Search features..."
-      value={value}
-      onChange={(e) => onChange(e.target.value)}
-      aria-label="Search features"
-    />
+    <div className={styles.wrapper}>
+      <span className={styles.icon}>⌕</span>
+      <input
+        className={styles.input}
+        type="search"
+        placeholder="Search features…"
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        aria-label="Search features"
+      />
+    </div>
   );
 }
