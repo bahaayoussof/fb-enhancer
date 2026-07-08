@@ -12,7 +12,7 @@ export class FeedCleanerFeature implements IFeature {
   readonly defaultEnabled = true;
 
   private readonly hidden = new Set<Element>();
-  private readonly processed = new WeakSet<Element>();
+  private processed = new WeakSet<Element>();
 
   run(_context: PageContext, nodes: Node[]): void {
     const candidates = findFeedNoiseElements(nodes);
@@ -31,5 +31,6 @@ export class FeedCleanerFeature implements IFeature {
   teardown(): void {
     this.hidden.forEach(showFeedNoiseElement);
     this.hidden.clear();
+    this.processed = new WeakSet<Element>();
   }
 }

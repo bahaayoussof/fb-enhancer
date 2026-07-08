@@ -5,6 +5,7 @@ import { observerManager } from '@core/observer/observer-manager';
 import { featureManager } from '@core/feature-manager/feature-manager';
 import { storageService } from '@core/storage/storage-service';
 import { isFacebookPage } from '@shared/utils/is-facebook';
+import type { FeatureSettings } from '@shared/types';
 import type { PageContext } from '@core/context/types';
 
 // Idle window before processing accumulated mutations.
@@ -43,6 +44,12 @@ class ExtensionPipeline {
     }, 2000);
 
     logger.info(`Pipeline started (${this.context.pageType})`);
+  }
+
+  refresh(settings: FeatureSettings): void {
+    if (!this.running || !this.context) return;
+    featureManager.refresh(settings, this.context);
+    logger.debug('Pipeline refreshed with new settings');
   }
 
   stop(): void {

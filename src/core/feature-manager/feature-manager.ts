@@ -20,6 +20,22 @@ class FeatureManager {
     this.settings = settings;
   }
 
+  refresh(newSettings: FeatureSettings, context: PageContext): void {
+    const prev = this.settings;
+    this.settings = newSettings;
+
+    for (const [id, feature] of this.features) {
+      const wasEnabled = prev ? (prev[id] ?? true) : true;
+      const isNowEnabled = newSettings[id] ?? true;
+
+      if (wasEnabled && !isNowEnabled) {
+        try { feature.teardown(); } catch (err) { logger.error(`Feature "${id}" teardown failed`, err); }
+      } else if (!wasEnabled && isNowEnabled) {
+        try { feature.run(context, [document.body]); } catch (err) { logger.error(`Feature "${id}" run failed`, err); }
+      }
+    }
+  }
+
   run(context: PageContext, nodes: Node[]): void {
     for (const [id, feature] of this.features) {
       if (!this.isEnabled(id)) continue;

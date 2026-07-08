@@ -12,7 +12,7 @@ export class HideReelsFeature implements IFeature {
   readonly defaultEnabled = true;
 
   private readonly hidden = new Set<Element>();
-  private readonly processed = new WeakSet<Element>();
+  private processed = new WeakSet<Element>();
 
   run(_context: PageContext, nodes: Node[]): void {
     const candidates = findReelElements(nodes);
@@ -31,5 +31,6 @@ export class HideReelsFeature implements IFeature {
   teardown(): void {
     this.hidden.forEach(showReelElement);
     this.hidden.clear();
+    this.processed = new WeakSet<Element>();
   }
 }
