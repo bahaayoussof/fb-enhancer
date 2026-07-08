@@ -3,17 +3,21 @@ import { buildContext } from '@core/context/context-builder';
 import { domScanner } from '@core/scanner/dom-scanner';
 import { observerManager } from '@core/observer/observer-manager';
 import { featureManager } from '@core/feature-manager/feature-manager';
+import { storageService } from '@core/storage/storage-service';
 import type { PageContext } from '@core/context/types';
 
 class ExtensionPipeline {
   private context: PageContext | null = null;
   private running = false;
 
-  start(): void {
+  async start(): Promise<void> {
     if (this.running) return;
 
     this.context = buildContext();
     logger.debug('Page context', this.context);
+
+    const settings = await storageService.loadSettings();
+    featureManager.applySettings(settings);
 
     observerManager.observe(this.handleMutations.bind(this));
     this.running = true;

@@ -14,4 +14,4 @@ messagingService.onMessage((message: ExtensionMessage) => {
   }
 });
 
-extensionPipeline.start();
+extensionPipeline.start().catch((err) => logger.error('Pipeline failed to start', err));
