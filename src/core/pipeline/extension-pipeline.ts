@@ -33,6 +33,15 @@ class ExtensionPipeline {
     // Initial scan against current DOM
     featureManager.run(this.context, [document.body]);
 
+    // Retry scan after short delay — Facebook loads feed content asynchronously
+    // and some elements may not exist at inject time
+    setTimeout(() => {
+      if (this.context && this.running) {
+        featureManager.run(this.context, [document.body]);
+        logger.debug('Retry scan complete');
+      }
+    }, 2000);
+
     logger.info(`Pipeline started (${this.context.pageType})`);
   }
 
