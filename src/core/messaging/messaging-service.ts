@@ -12,20 +12,16 @@ class MessagingService {
   }
 
   sendToActiveTab(message: ExtensionMessage): Promise<unknown> {
-    return chrome.tabs
-      .query({ active: true, lastFocusedWindow: true })
-      .then(([tab]) => {
-        if (!tab?.id) return;
-        return chrome.tabs.sendMessage(tab.id, message);
-      });
+    return chrome.tabs.query({ active: true, lastFocusedWindow: true }).then(([tab]) => {
+      if (!tab?.id) return;
+      return chrome.tabs.sendMessage(tab.id, message);
+    });
   }
 
   reloadActiveTab(): Promise<void> {
-    return chrome.tabs
-      .query({ active: true, lastFocusedWindow: true })
-      .then(([tab]) => {
-        if (tab?.id) chrome.tabs.reload(tab.id);
-      });
+    return chrome.tabs.query({ active: true, lastFocusedWindow: true }).then(([tab]) => {
+      if (tab?.id) chrome.tabs.reload(tab.id);
+    });
   }
 
   onMessage(handler: MessageHandler): void {
@@ -34,9 +30,7 @@ class MessagingService {
       const result = handler(message, sender);
 
       if (result instanceof Promise) {
-        result
-          .then(sendResponse)
-          .catch((err) => logger.error('Messaging handler error', err));
+        result.then(sendResponse).catch((err) => logger.error('Messaging handler error', err));
         return true; // keep channel open for async sendResponse
       }
     });

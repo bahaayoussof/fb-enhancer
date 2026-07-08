@@ -32,7 +32,10 @@ messagingService.onMessage((message: ExtensionMessage): Promise<unknown> | void 
     return storageService
       .updateFeature(message.payload.featureId, message.payload.enabled)
       .then((updated) => {
-        messagingService.sendToActiveTab({ type: 'SETTINGS_UPDATED', payload: { settings: updated } });
+        messagingService.sendToActiveTab({
+          type: 'SETTINGS_UPDATED',
+          payload: { settings: updated },
+        });
         return updated;
       })
       .catch((err) => {

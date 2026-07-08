@@ -15,7 +15,11 @@ const MEDIA_FEATURES: FeatureMeta[] = [
 ];
 
 const LAYOUT_FEATURES: FeatureMeta[] = [
-  { id: 'hide-sidebar', label: 'Right Sidebar', description: 'Hide sponsored and suggested sidebar' },
+  {
+    id: 'hide-sidebar',
+    label: 'Right Sidebar',
+    description: 'Hide sponsored and suggested sidebar',
+  },
 ];
 
 const ALL_FEATURES: FeatureMeta[] = [...FEED_FEATURES, ...MEDIA_FEATURES, ...LAYOUT_FEATURES];

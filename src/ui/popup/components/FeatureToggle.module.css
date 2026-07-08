@@ -64,7 +64,9 @@
   grid-template-columns: 0fr 2fr 1fr;
   grid-template-rows: 1fr;
   place-content: center;
-  transition: color 0.3s, grid-template-columns 0.2s;
+  transition:
+    color 0.3s,
+    grid-template-columns 0.2s;
   display: inline-grid;
   position: relative;
 }

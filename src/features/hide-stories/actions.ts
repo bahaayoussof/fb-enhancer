@@ -2,7 +2,12 @@ import { safeHide, safeShow } from '@shared/dom/safe-hide';
 import { findAncestorBySelector } from '@shared/dom/parent-finder';
 
 // Some story containers are nested — walk up to find the outermost wrapping div
-const WRAPPER_SELECTORS = ['[data-pagelet]', 'section', '[role="region"]', '[role="complementary"]'];
+const WRAPPER_SELECTORS = [
+  '[data-pagelet]',
+  'section',
+  '[role="region"]',
+  '[role="complementary"]',
+];
 
 export function hideStoryElement(element: Element): Element {
   // Try to hide the nearest semantic wrapper so layout gaps are minimized

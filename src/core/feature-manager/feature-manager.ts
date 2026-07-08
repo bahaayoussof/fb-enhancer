@@ -29,9 +29,17 @@ class FeatureManager {
       const isNowEnabled = newSettings[id] ?? true;
 
       if (wasEnabled && !isNowEnabled) {
-        try { feature.teardown(); } catch (err) { logger.error(`Feature "${id}" teardown failed`, err); }
+        try {
+          feature.teardown();
+        } catch (err) {
+          logger.error(`Feature "${id}" teardown failed`, err);
+        }
       } else if (!wasEnabled && isNowEnabled) {
-        try { feature.run(context, [document.body]); } catch (err) { logger.error(`Feature "${id}" run failed`, err); }
+        try {
+          feature.run(context, [document.body]);
+        } catch (err) {
+          logger.error(`Feature "${id}" run failed`, err);
+        }
       }
     }
   }

@@ -28,10 +28,7 @@ class StorageService implements IStorageService {
     }
   }
 
-  async updateFeature(
-    id: keyof FeatureSettings,
-    enabled: boolean
-  ): Promise<FeatureSettings> {
+  async updateFeature(id: keyof FeatureSettings, enabled: boolean): Promise<FeatureSettings> {
     const current = await this.loadSettings();
     const updated: FeatureSettings = { ...current, [id]: enabled };
     await this.saveSettings(updated);

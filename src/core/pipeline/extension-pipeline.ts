@@ -93,7 +93,9 @@ class ExtensionPipeline {
     const elements = domScanner.extractAddedElements(records);
     if (elements.length === 0) return;
 
-    logger.debug(`Processing batch: ${elements.length} element(s) from ${records.length} record(s)`);
+    logger.debug(
+      `Processing batch: ${elements.length} element(s) from ${records.length} record(s)`
+    );
     featureManager.run(this.context, elements);
   }
 }

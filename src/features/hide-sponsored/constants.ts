@@ -8,9 +8,9 @@ export const SPONSORED_ARIA_SELECTORS: readonly string[] = [
 // Text strings Facebook uses to mark sponsored content (check multiple locales)
 export const SPONSORED_TEXT_MARKERS: readonly string[] = [
   'Sponsored',
-  'Gesponsert',   // German
-  'Patrocinado',  // Spanish/Portuguese
-  'Sponsorisé',   // French
+  'Gesponsert', // German
+  'Patrocinado', // Spanish/Portuguese
+  'Sponsorisé', // French
   'Sponsorizzato', // Italian
 ];
 
