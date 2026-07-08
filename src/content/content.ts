@@ -4,6 +4,9 @@ import { featureManager } from '@core/feature-manager/feature-manager';
 import { extensionPipeline } from '@core/pipeline/extension-pipeline';
 import type { ExtensionMessage } from '@core/messaging/types';
 
+// Feature registrations — side-effect imports trigger featureManager.register()
+import '@features/hide-stories';
+
 logger.info('content ready');
 
 messagingService.onMessage((message: ExtensionMessage) => {
