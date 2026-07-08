@@ -1,0 +1,255 @@
+{
+  "version": 1,
+  "created_at": "2026-07-08T07:00:19.623Z",
+  "lifetime": {
+    "total_tokens_estimated": 13183,
+    "total_reads": 4,
+    "total_writes": 35,
+    "total_sessions": 1,
+    "anatomy_hits": 2,
+    "anatomy_misses": 2,
+    "repeated_reads_blocked": 0,
+    "estimated_savings_vs_bare_cli": 400
+  },
+  "sessions": [
+    {
+      "id": "session-2026-07-08-1002",
+      "started": "2026-07-08T07:02:40.857Z",
+      "ended": "2026-07-08T07:19:44.016Z",
+      "reads": [
+        {
+          "file": "D:/Private/fb-enhancer/.docs/AI_RULES.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "D:/Private/fb-enhancer/dist/manifest.json",
+          "tokens_estimated": 196,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "D:/Private/fb-enhancer/.docs/PLAN.md",
+          "tokens_estimated": 4290,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/package.json",
+          "tokens_estimated": 238,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/tsconfig.json",
+          "tokens_estimated": 200,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/.prettierrc",
+          "tokens_estimated": 38,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/manifest.json",
+          "tokens_estimated": 196,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/.eslintrc.cjs",
+          "tokens_estimated": 222,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/vite.config.ts",
+          "tokens_estimated": 203,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/popup/index.html",
+          "tokens_estimated": 105,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/options/index.html",
+          "tokens_estimated": 89,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/popup/popup.tsx",
+          "tokens_estimated": 60,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/options/options.tsx",
+          "tokens_estimated": 64,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/content/content.ts",
+          "tokens_estimated": 12,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/background/background.ts",
+          "tokens_estimated": 15,
+          "action": "create"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 196,
+        "output_tokens_estimated": 5732,
+        "reads_count": 2,
+        "writes_count": 13,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 1
+      }
+    },
+    {
+      "id": "session-2026-07-08-1002",
+      "started": "2026-07-08T07:02:40.857Z",
+      "ended": "2026-07-08T07:27:28.864Z",
+      "reads": [
+        {
+          "file": "D:/Private/fb-enhancer/.docs/AI_RULES.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "D:/Private/fb-enhancer/dist/manifest.json",
+          "tokens_estimated": 196,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "D:/Private/fb-enhancer/.docs/PLAN.md",
+          "tokens_estimated": 4290,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/package.json",
+          "tokens_estimated": 238,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/tsconfig.json",
+          "tokens_estimated": 200,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/.prettierrc",
+          "tokens_estimated": 38,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/manifest.json",
+          "tokens_estimated": 196,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/.eslintrc.cjs",
+          "tokens_estimated": 222,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/vite.config.ts",
+          "tokens_estimated": 203,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/popup/index.html",
+          "tokens_estimated": 105,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/options/index.html",
+          "tokens_estimated": 89,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/popup/popup.tsx",
+          "tokens_estimated": 60,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/options/options.tsx",
+          "tokens_estimated": 64,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/content/content.ts",
+          "tokens_estimated": 12,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/background/background.ts",
+          "tokens_estimated": 15,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/shared/types/index.ts",
+          "tokens_estimated": 59,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/logger/types.ts",
+          "tokens_estimated": 67,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/logger/logger.ts",
+          "tokens_estimated": 187,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/messaging/types.ts",
+          "tokens_estimated": 119,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/messaging/messaging-service.ts",
+          "tokens_estimated": 328,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/content/content.ts",
+          "tokens_estimated": 94,
+          "action": "edit"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/background/background.ts",
+          "tokens_estimated": 136,
+          "action": "edit"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/popup/popup.tsx",
+          "tokens_estimated": 216,
+          "action": "edit"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/options/options.tsx",
+          "tokens_estimated": 121,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 196,
+        "output_tokens_estimated": 7059,
+        "reads_count": 2,
+        "writes_count": 22,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 1
+      }
+    }
+  ],
+  "daemon_usage": [],
+  "waste_flags": [],
+  "optimization_report": {
+    "last_generated": null,
+    "patterns": []
+  }
+}

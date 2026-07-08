@@ -1,0 +1,69 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-zip/
+
+# Vite cache
+.vite/
+vite.config.ts.timestamp-*
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+*.pem
+*.key
+*.cert
+secrets.*
+config.local.*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Package manager locks (keep only one — this project uses npm)
+yarn.lock
+pnpm-lock.yaml
+
+# Chrome extension packaging artifacts
+*.crx
+*.pem
+*.zip
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Temp / scratch
+*.tmp
+*.temp
+.cache/
+```
+
+Key points:
+- `node_modules/` and `dist/` never committed — biggest ones
+- `.env*` files block any API keys or secrets you might add later
+- `*.pem` blocks the Chrome extension signing key (if you ever package with `chrome.exe --pack-extension` it generates a `.pem` — that key must **never** go to git)
+- `*.crx` blocks packaged extension binaries
+- Only `package-lock.json` kept — `yarn.lock` and `pnpm-lock.yaml` excluded since project uses npm
