@@ -1,7 +1,7 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-07-08T07:25:23.611Z
-> Files: 23 tracked | Anatomy hits: 0 | Misses: 0
+> Auto-maintained by OpenWolf. Last scanned: 2026-07-08T08:05:45.193Z
+> Files: 32 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ./
 
@@ -33,7 +33,17 @@
 
 ## src/content/
 
-- `content.ts` (~94 tok)
+- `content.ts` (~174 tok)
+
+## src/core/context/
+
+- `context-builder.ts` — Exports buildContext (~271 tok)
+- `types.ts` — Exports FacebookPageType, PageContext (~57 tok)
+
+## src/core/feature-manager/
+
+- `feature-manager.ts` — Exports featureManager (~418 tok)
+- `types.ts` — Exports IFeature (~95 tok)
 
 ## src/core/logger/
 
@@ -44,6 +54,20 @@
 
 - `messaging-service.ts` — Exports messagingService (~328 tok)
 - `types.ts` — Exports ToggleFeaturePayload, SettingsUpdatedPayload, ExtensionMessage (~119 tok)
+
+## src/core/observer/
+
+- `observer-manager.ts` — Exports observerManager (~218 tok)
+- `types.ts` — Exports ObserverConfig (~34 tok)
+
+## src/core/pipeline/
+
+- `extension-pipeline.ts` — Exports extensionPipeline (~399 tok)
+
+## src/core/scanner/
+
+- `dom-scanner.ts` — Exports domScanner (~105 tok)
+- `types.ts` — Exports ScanResult (~36 tok)
 
 ## src/options/
 
