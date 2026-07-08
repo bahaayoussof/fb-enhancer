@@ -44,3 +44,27 @@
 | 11:05 | Created src/core/pipeline/extension-pipeline.ts | — | ~399 |
 | 11:05 | Edited src/content/content.ts | added 1 condition(s) | ~174 |
 | 11:07 | Session end: 32 writes across 21 files (PLAN.md, package.json, tsconfig.json, .prettierrc, manifest.json) | 2 reads | ~9062 tok |
+| 11:08 | Created src/core/storage/types.ts | — | ~81 |
+| 11:08 | Created src/core/storage/defaults.ts | — | ~76 |
+| 11:08 | Created src/core/storage/storage-service.ts | — | ~400 |
+| 11:08 | Edited src/core/pipeline/extension-pipeline.ts | modified start() | ~302 |
+| 11:08 | Edited src/content/content.ts | inline fix | ~26 |
+| 11:09 | Edited src/background/background.ts | added 1 condition(s) | ~260 |
+| 11:11 | Created src/ui/popup/hooks/useFeatureSettings.ts | — | ~394 |
+| 11:11 | Created src/ui/popup/components/FeatureToggle.tsx | — | ~237 |
+| 11:11 | Created src/ui/popup/components/FeatureToggle.module.css | — | ~316 |
+| 11:11 | Created src/ui/popup/components/SearchBar.tsx | — | ~121 |
+| 11:11 | Created src/ui/popup/components/SearchBar.module.css | — | ~88 |
+| 11:12 | Created src/ui/popup/components/CategoryGroup.tsx | — | ~261 |
+| 11:12 | Created src/ui/popup/components/CategoryGroup.module.css | — | ~57 |
+| 11:12 | Created src/ui/popup/Popup.tsx | — | ~750 |
+| 11:12 | Created src/ui/popup/Popup.module.css | — | ~216 |
+| 11:12 | Edited src/popup/popup.tsx | modified if() | ~55 |
+| 11:16 | Created src/shared/dom/safe-remove.ts | — | ~40 |
+| 11:16 | Created src/shared/dom/safe-hide.ts | — | ~107 |
+| 11:16 | Created src/shared/dom/parent-finder.ts | — | ~156 |
+| 11:16 | Created src/shared/dom/selector-helpers.ts | — | ~290 |
+| 11:16 | Created src/shared/utils/retry.ts | — | ~156 |
+| 11:16 | Created src/shared/utils/debounce.ts | — | ~96 |
+| 11:16 | Created src/shared/utils/is-facebook.ts | — | ~34 |
+| 11:24 | Session end: 55 writes across 39 files (PLAN.md, package.json, tsconfig.json, .prettierrc, manifest.json) | 2 reads | ~13581 tok |

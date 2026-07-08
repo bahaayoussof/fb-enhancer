@@ -16,6 +16,70 @@
       "related_bugs": [],
       "occurrences": 1,
       "last_seen": "2026-07-08T07:25:21.612Z"
+    },
+    {
+      "id": "bug-002",
+      "timestamp": "2026-07-08T08:08:54.178Z",
+      "error_message": "Missing await",
+      "file": "src/core/pipeline/extension-pipeline.ts",
+      "root_cause": "Async call without await — returned Promise instead of value",
+      "fix": "Added await to async call",
+      "tags": [
+        "auto-detected",
+        "async-fix",
+        "ts"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-07-08T08:08:54.178Z"
+    },
+    {
+      "id": "bug-003",
+      "timestamp": "2026-07-08T08:08:59.302Z",
+      "error_message": "Missing error handling in unknown",
+      "file": "src/content/content.ts",
+      "root_cause": "Code path had no error handling — exceptions would propagate uncaught",
+      "fix": "Added try/catch block",
+      "tags": [
+        "auto-detected",
+        "error-handling",
+        "ts"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-07-08T08:08:59.302Z"
+    },
+    {
+      "id": "bug-004",
+      "timestamp": "2026-07-08T08:09:08.113Z",
+      "error_message": "Missing error handling in unknown",
+      "file": "src/background/background.ts",
+      "root_cause": "Code path had no error handling — exceptions would propagate uncaught",
+      "fix": "Added try/catch block",
+      "tags": [
+        "auto-detected",
+        "error-handling",
+        "ts"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-07-08T08:09:08.113Z"
+    },
+    {
+      "id": "bug-005",
+      "timestamp": "2026-07-08T08:12:27.027Z",
+      "error_message": "Significant refactor of ",
+      "file": "src/popup/popup.tsx",
+      "root_cause": "15 lines replaced/restructured",
+      "fix": "Rewrote 24→7 lines (15 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "tsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-07-08T08:12:27.027Z"
     }
   ]
 }

@@ -2,14 +2,14 @@
   "version": 1,
   "created_at": "2026-07-08T07:00:19.623Z",
   "lifetime": {
-    "total_tokens_estimated": 22245,
-    "total_reads": 6,
-    "total_writes": 67,
+    "total_tokens_estimated": 35826,
+    "total_reads": 8,
+    "total_writes": 122,
     "total_sessions": 1,
-    "anatomy_hits": 3,
-    "anatomy_misses": 3,
+    "anatomy_hits": 4,
+    "anatomy_misses": 4,
     "repeated_reads_blocked": 0,
-    "estimated_savings_vs_bare_cli": 600
+    "estimated_savings_vs_bare_cli": 800
   },
   "sessions": [
     {
@@ -430,6 +430,310 @@
         "output_tokens_estimated": 8866,
         "reads_count": 2,
         "writes_count": 32,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 1
+      }
+    },
+    {
+      "id": "session-2026-07-08-1002",
+      "started": "2026-07-08T07:02:40.857Z",
+      "ended": "2026-07-08T08:24:45.508Z",
+      "reads": [
+        {
+          "file": "D:/Private/fb-enhancer/.docs/AI_RULES.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "D:/Private/fb-enhancer/dist/manifest.json",
+          "tokens_estimated": 196,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "D:/Private/fb-enhancer/.docs/PLAN.md",
+          "tokens_estimated": 4290,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/package.json",
+          "tokens_estimated": 238,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/tsconfig.json",
+          "tokens_estimated": 200,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/.prettierrc",
+          "tokens_estimated": 38,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/manifest.json",
+          "tokens_estimated": 196,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/.eslintrc.cjs",
+          "tokens_estimated": 222,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/vite.config.ts",
+          "tokens_estimated": 203,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/popup/index.html",
+          "tokens_estimated": 105,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/options/index.html",
+          "tokens_estimated": 89,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/popup/popup.tsx",
+          "tokens_estimated": 60,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/options/options.tsx",
+          "tokens_estimated": 64,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/content/content.ts",
+          "tokens_estimated": 12,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/background/background.ts",
+          "tokens_estimated": 15,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/shared/types/index.ts",
+          "tokens_estimated": 59,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/logger/types.ts",
+          "tokens_estimated": 67,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/logger/logger.ts",
+          "tokens_estimated": 187,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/messaging/types.ts",
+          "tokens_estimated": 119,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/messaging/messaging-service.ts",
+          "tokens_estimated": 328,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/content/content.ts",
+          "tokens_estimated": 94,
+          "action": "edit"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/background/background.ts",
+          "tokens_estimated": 136,
+          "action": "edit"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/popup/popup.tsx",
+          "tokens_estimated": 216,
+          "action": "edit"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/options/options.tsx",
+          "tokens_estimated": 121,
+          "action": "edit"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/context/types.ts",
+          "tokens_estimated": 57,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/scanner/types.ts",
+          "tokens_estimated": 36,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/observer/types.ts",
+          "tokens_estimated": 34,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/feature-manager/types.ts",
+          "tokens_estimated": 95,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/context/context-builder.ts",
+          "tokens_estimated": 271,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/scanner/dom-scanner.ts",
+          "tokens_estimated": 105,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/observer/observer-manager.ts",
+          "tokens_estimated": 218,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/feature-manager/feature-manager.ts",
+          "tokens_estimated": 418,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/pipeline/extension-pipeline.ts",
+          "tokens_estimated": 399,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/content/content.ts",
+          "tokens_estimated": 174,
+          "action": "edit"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/storage/types.ts",
+          "tokens_estimated": 81,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/storage/defaults.ts",
+          "tokens_estimated": 76,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/storage/storage-service.ts",
+          "tokens_estimated": 400,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/core/pipeline/extension-pipeline.ts",
+          "tokens_estimated": 302,
+          "action": "edit"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/content/content.ts",
+          "tokens_estimated": 26,
+          "action": "edit"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/background/background.ts",
+          "tokens_estimated": 260,
+          "action": "edit"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/ui/popup/hooks/useFeatureSettings.ts",
+          "tokens_estimated": 394,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/ui/popup/components/FeatureToggle.tsx",
+          "tokens_estimated": 237,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/ui/popup/components/FeatureToggle.module.css",
+          "tokens_estimated": 316,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/ui/popup/components/SearchBar.tsx",
+          "tokens_estimated": 121,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/ui/popup/components/SearchBar.module.css",
+          "tokens_estimated": 88,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/ui/popup/components/CategoryGroup.tsx",
+          "tokens_estimated": 261,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/ui/popup/components/CategoryGroup.module.css",
+          "tokens_estimated": 57,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/ui/popup/Popup.tsx",
+          "tokens_estimated": 750,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/ui/popup/Popup.module.css",
+          "tokens_estimated": 216,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/popup/popup.tsx",
+          "tokens_estimated": 55,
+          "action": "edit"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/shared/dom/safe-remove.ts",
+          "tokens_estimated": 40,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/shared/dom/safe-hide.ts",
+          "tokens_estimated": 107,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/shared/dom/parent-finder.ts",
+          "tokens_estimated": 156,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/shared/dom/selector-helpers.ts",
+          "tokens_estimated": 290,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/shared/utils/retry.ts",
+          "tokens_estimated": 156,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/shared/utils/debounce.ts",
+          "tokens_estimated": 96,
+          "action": "create"
+        },
+        {
+          "file": "D:/Private/fb-enhancer/src/shared/utils/is-facebook.ts",
+          "tokens_estimated": 34,
+          "action": "create"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 196,
+        "output_tokens_estimated": 13385,
+        "reads_count": 2,
+        "writes_count": 55,
         "repeated_reads_blocked": 0,
         "anatomy_lookups": 1
       }
