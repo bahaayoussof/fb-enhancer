@@ -22,7 +22,7 @@ messagingService.onMessage((message: ExtensionMessage): Promise<unknown> | void 
         return storageService.saveSettings(updated).then(() => updated);
       })
       .then((updated) => {
-        messagingService.sendToActiveTab({ type: 'SETTINGS_UPDATED', payload: { settings: updated } });
+        messagingService.reloadActiveTab();
         return updated;
       })
       .catch((err) => logger.error('Failed to toggle all features', err));

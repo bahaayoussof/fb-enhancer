@@ -13,10 +13,18 @@ class MessagingService {
 
   sendToActiveTab(message: ExtensionMessage): Promise<unknown> {
     return chrome.tabs
-      .query({ active: true, currentWindow: true })
+      .query({ active: true, lastFocusedWindow: true })
       .then(([tab]) => {
         if (!tab?.id) return;
         return chrome.tabs.sendMessage(tab.id, message);
+      });
+  }
+
+  reloadActiveTab(): Promise<void> {
+    return chrome.tabs
+      .query({ active: true, lastFocusedWindow: true })
+      .then(([tab]) => {
+        if (tab?.id) chrome.tabs.reload(tab.id);
       });
   }
 
