@@ -18,12 +18,6 @@ class MessagingService {
     });
   }
 
-  reloadActiveTab(): Promise<void> {
-    return chrome.tabs.query({ active: true, lastFocusedWindow: true }).then(([tab]) => {
-      if (tab?.id) chrome.tabs.reload(tab.id);
-    });
-  }
-
   onMessage(handler: MessageHandler): void {
     chrome.runtime.onMessage.addListener((raw, sender, sendResponse) => {
       const message = raw as ExtensionMessage;

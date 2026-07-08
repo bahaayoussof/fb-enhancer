@@ -22,7 +22,7 @@ messagingService.onMessage((message: ExtensionMessage): Promise<unknown> | void 
         return storageService.saveSettings(updated).then(() => updated);
       })
       .then((updated) => {
-        messagingService.reloadActiveTab();
+        messagingService.sendToActiveTab({ type: 'SETTINGS_UPDATED', payload: { settings: updated } });
         return updated;
       })
       .catch((err) => logger.error('Failed to toggle all features', err));
@@ -32,14 +32,9 @@ messagingService.onMessage((message: ExtensionMessage): Promise<unknown> | void 
     return storageService
       .updateFeature(message.payload.featureId, message.payload.enabled)
       .then((updated) => {
-        messagingService.sendToActiveTab({
-          type: 'SETTINGS_UPDATED',
-          payload: { settings: updated },
-        });
+        messagingService.sendToActiveTab({ type: 'SETTINGS_UPDATED', payload: { settings: updated } });
         return updated;
       })
-      .catch((err) => {
-        logger.error('Failed to toggle feature', err);
-      });
+      .catch((err) => logger.error('Failed to toggle feature', err));
   }
 });
