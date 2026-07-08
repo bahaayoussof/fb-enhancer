@@ -1,5 +1,3 @@
-import { useMemo, useState } from 'react';
-import { SearchBar } from './components/SearchBar';
 import { CategoryGroup } from './components/CategoryGroup';
 import { useFeatureSettings } from './hooks/useFeatureSettings';
 import type { FeatureMeta } from './components/CategoryGroup';
@@ -26,15 +24,6 @@ const LOGO = chrome.runtime.getURL('images/logo.png');
 
 export function Popup() {
   const { settings, loading, toggle, toggleAll } = useFeatureSettings();
-  const [query, setQuery] = useState('');
-
-  const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    if (!q) return null;
-    return ALL_FEATURES.filter(
-      (f) => f.label.toLowerCase().includes(q) || f.description.toLowerCase().includes(q)
-    );
-  }, [query]);
 
   const enabledCount = ALL_FEATURES.filter((f) => settings[f.id]).length;
   const allDisabled = enabledCount === 0;
@@ -60,26 +49,11 @@ export function Popup() {
             </button>
           </div>
         </div>
-        <SearchBar value={query} onChange={setQuery} />
       </header>
 
       <main className={styles.content}>
         {loading ? (
           <p className={styles.loading}>Loading…</p>
-        ) : filtered !== null ? (
-          filtered.length === 0 ? (
-            <div className={styles.emptyState}>
-              <p className={styles.emptyTitle}>No results</p>
-              <p className={styles.emptyHint}>Try a different search term</p>
-            </div>
-          ) : (
-            <CategoryGroup
-              title={`Results (${filtered.length})`}
-              features={filtered}
-              settings={settings}
-              onToggle={toggle}
-            />
-          )
         ) : (
           <>
             <CategoryGroup title="Feed" features={FEED_FEATURES} settings={settings} onToggle={toggle} />
