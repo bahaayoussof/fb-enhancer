@@ -84,7 +84,7 @@ export function Popup() {
 
       <footer className={styles.footer}>
         <span>
-          © {new Date().getFullYear()} <span className={styles.footerAuthor}>Yoka</span>
+          © {new Date().getFullYear()} <span className={styles.footerAuthor}>bahaa</span>
         </span>
         <span className={styles.footerVersion}>v{VERSION}</span>
       </footer>

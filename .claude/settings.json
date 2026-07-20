@@ -1,4 +1,13 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(find /tmp -maxdepth 3 -iname \"*.png\" -newermt '-10 minutes')",
+      "Read(//c/Users/Lenovo/.claude/**)",
+      "Read(//c/Users/Lenovo/AppData/Local/Temp/**)",
+      "Bash(magick -version)"
+    ]
+  },
   "hooks": {
     "SessionStart": [
       {
@@ -68,8 +77,5 @@
         ]
       }
     ]
-  },
-  "permissions": {
-    "allow": ["Bash(npm run *)"]
   }
 }
